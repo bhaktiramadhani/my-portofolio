@@ -100,7 +100,7 @@ function App() {
                   strings: ["Front-end Developer", "Back-end Developer"],
                   autoStart: true,
                   loop: true,
-                  deleteSpeed: 500,
+                  deleteSpeed: 120,
                   delay: 40,
                 }
               } />
