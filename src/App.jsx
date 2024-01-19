@@ -2,13 +2,14 @@ import profile from './assets/images/profile.jpg';
 import marker from './assets/images/marker.svg';
 import cv from './assets/CV-Bhakti-Ramadhani.pdf'
 import github from './assets/images/github.svg';
-import nextjs from './assets/images/next-js.svg'
 import laravel from './assets/images/laravel.svg'
 import instagram from './assets/images/instagram.svg'
 import silantar from './assets/images/silantar.png'
 import chemaraya from './assets/images/chemaraya.png'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Typewriter from 'typewriter-effect';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const skills = [
   { name: 'HTML', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
@@ -28,6 +29,11 @@ function App() {
   const [open, setOpen] = useState(false);
   console.log(cv);
 
+  useEffect(() => {
+    AOS.init({
+      once: true
+    })
+  }, [])
   return (
     <div className="flex flex-col font-poppins">
       <header className="w-full flex items-center justify-between px-10 lg:justify-between lg:px-16 max-w-7xl mx-auto my-4 py-3">
@@ -83,7 +89,7 @@ function App() {
         </a>
       </header>
       <main className="w-full py-20 flex flex-col mx-auto px-10 lg:px-16 max-w-7xl">
-        <section id="home" className='flex justify-center gap-20 flex-wrap lg:flex-nowrap mx-auto'>
+        <section id="home" className='flex justify-center gap-20 flex-wrap lg:flex-nowrap mx-auto' data-aos="fade-up" data-aos-duration="1000">
           <div>
             <div className="rounded-full w-72 h-72 md:w-96 md:h-96 overflow-hidden">
               <img src={profile} alt="aa" className="overflow-hidden object-cover w-full h-full object-top" />
@@ -120,11 +126,11 @@ function App() {
         </section>
         <section id="projects" className='mt-32 scroll-mt-6'>
           <div className="w-full text-center">
-            <h2 className='font-bold text-3xl md:text-5xl'>Projects</h2>
+            <h2 className='font-bold text-3xl md:text-5xl' data-aos="zoom-in" data-aos-duration="500">Projects</h2>
           </div>
           <div className='w-full py-10'>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8'>
-              <a href='https://silantar-kmipn-v.vercel.app' className="w-full h-auto flex flex-col rounded-xl shadow-md overflow-hidden outline outline-1 outline-[#bababa55]">
+              <a href='https://silantar-kmipn-v.vercel.app' data-aos="fade-up" data-aos-duration="1000" className="w-full h-auto flex flex-col rounded-xl shadow-md overflow-hidden outline outline-1 outline-[#bababa55] hover:scale-[1.01] hover:shadow-lg transition-all duration-300">
                 <img src={silantar} alt="aa" className="w-full h-64 object-cover object-top" />
                 <div className="p-5 text-neutral-700">
                   <h3 className='text-xl text-black'>Silantar</h3>
@@ -137,7 +143,7 @@ function App() {
                   </div>
                 </div>
               </a>
-              <a href='https://chemaraya.live' className="w-full h-auto flex flex-col rounded-xl shadow-md overflow-hidden outline outline-1 outline-[#bababa55]">
+              <a href='https://chemaraya.live' data-aos="fade-up" data-aos-duration="1000" className="w-full h-auto flex flex-col rounded-xl shadow-md overflow-hidden outline outline-1 outline-[#bababa55] hover:scale-[1.01] hover:shadow-lg transition-all duration-300">
                 <img src={chemaraya} alt="aa" className="w-full h-64 object-cover object-top" />
                 <div className="p-5 text-neutral-700">
                   <h3 className='text-xl text-black'>Chemaraya</h3>
@@ -155,13 +161,13 @@ function App() {
         </section>
         <section id="skills" className='mt-16 scroll-mt-6'>
           <div className="w-full text-center">
-            <h2 className='font-bold text-3xl md:text-5xl'>Skills</h2>
+            <h2 className='font-bold text-3xl md:text-5xl' data-aos="zoom-in" data-aos-duration="500">Skills</h2>
           </div>
           <div className='w-full py-10'>
             <div className="flex flex-wrap justify-center gap-5 text-center">
               {skills.map((skill, index) => {
                 return (
-                  <div key={index} className="flex flex-col justify-center items-center px-10 py-6 bg-[#444444] rounded-xl cursor-pointer shadow-md hover:shadow-lg hover:scale-105 transition-all gap-2">
+                  <div key={index} className="flex flex-col justify-center items-center px-10 py-6 bg-[#444444] rounded-xl cursor-pointer shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 gap-2" data-aos="zoom-in" data-aos-duration="500">
                     <img src={skill.icon_url} width={40} height={40} />
                     <p className="text-white font-medium text-xs">{skill.name}</p>
                   </div>
