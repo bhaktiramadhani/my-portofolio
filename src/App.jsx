@@ -130,7 +130,7 @@ function App() {
           </div>
           <div className='w-full py-10'>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8'>
-              <a href='https://silantar-kmipn-v.vercel.app' data-aos="fade-up" data-aos-duration="1000" className="w-full h-auto flex flex-col rounded-xl shadow-md overflow-hidden outline outline-1 outline-[#bababa55] hover:scale-[1.01] hover:shadow-lg transition-all duration-300">
+              <a href='https://silantar-kmipn-v.vercel.app' data-aos="fade-up" data-aos-duration="1000" className="w-full h-auto flex flex-col rounded-xl shadow-md overflow-hidden outline outline-1 outline-[#bababa55] hover:!scale-[1.01] hover:shadow-lg transition-all duration-300">
                 <img src={silantar} alt="aa" className="w-full h-64 object-cover object-top" />
                 <div className="p-5 text-neutral-700">
                   <h3 className='text-xl text-black'>Silantar</h3>
@@ -143,7 +143,7 @@ function App() {
                   </div>
                 </div>
               </a>
-              <a href='https://chemaraya.live' data-aos="fade-up" data-aos-duration="1000" className="w-full h-auto flex flex-col rounded-xl shadow-md overflow-hidden outline outline-1 outline-[#bababa55] hover:scale-[1.01] hover:shadow-lg transition-all duration-300">
+              <a href='https://chemaraya.live' data-aos="fade-up" data-aos-duration="1000" className="w-full h-auto flex flex-col rounded-xl shadow-md overflow-hidden outline outline-1 outline-[#bababa55] hover:!scale-[1.01] hover:shadow-lg transition-all duration-300">
                 <img src={chemaraya} alt="aa" className="w-full h-64 object-cover object-top" />
                 <div className="p-5 text-neutral-700">
                   <h3 className='text-xl text-black'>Chemaraya</h3>
@@ -167,7 +167,7 @@ function App() {
             <div className="flex flex-wrap justify-center gap-5 text-center">
               {skills.map((skill, index) => {
                 return (
-                  <div key={index} className="flex flex-col justify-center items-center px-10 py-6 bg-[#444444] rounded-xl cursor-pointer shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 gap-2" data-aos="zoom-in" data-aos-duration="500">
+                  <div key={index} data-aos="zoom-in" data-aos-duration="500" className="flex flex-col justify-center items-center px-10 py-6 bg-[#444444] rounded-xl cursor-pointer shadow-md hover:shadow-lg hover:!scale-105 transition-all duration-300 gap-2" >
                     <img src={skill.icon_url} width={40} height={40} />
                     <p className="text-white font-medium text-xs">{skill.name}</p>
                   </div>
