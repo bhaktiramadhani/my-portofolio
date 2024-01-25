@@ -1,4 +1,13 @@
 import cv from './assets/CV-Bhakti-Ramadhani.pdf'
+import github from './assets/images/github.svg'
+import email from './assets/images/email.svg'
+import instagram from './assets/images/instagram.svg'
+import laravel from './assets/images/laravel.svg'
+import link from './assets/images/link.svg'
+import marker from './assets/images/marker.svg'
+import chemaraya from './assets/images/chemaraya.png'
+import profile from './assets/images/profile.jpg'
+import silantar from './assets/images/silantar.png'
 import { useEffect, useState } from 'react';
 import Typewriter from 'typewriter-effect';
 import AOS from 'aos';
@@ -13,7 +22,7 @@ const skills = [
   { name: 'React JS', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
   { name: 'Next JS', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
   { name: 'PHP', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" },
-  { name: 'Laravel', icon_url: "src/assets/images/laravel.svg" },
+  { name: 'Laravel', icon_url: laravel },
   { name: 'MySQL', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
   { name: 'Git', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
   { name: 'VS Code', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
@@ -78,14 +87,14 @@ function App() {
           </ul>
         </nav>
         <a href='https://github.com/bhaktiramadhani' target='_blank'>
-          <img src="src/assets/images/github.svg" alt="github Icon" width={42} height={42} />
+          <img src={github} alt="github Icon" width={42} height={42} />
         </a>
       </header>
       <main className="w-full py-20 flex flex-col mx-auto px-10 lg:px-16 max-w-7xl">
         <section id="home" className='flex justify-center gap-20 flex-wrap lg:flex-nowrap mx-auto' data-aos="fade-up" data-aos-duration="1000">
           <div>
             <div className="rounded-full w-72 h-72 md:w-96 md:h-96 overflow-hidden">
-              <img src="src/assets/images/profile.jpg" alt="aa" className="overflow-hidden object-cover w-full h-full object-top" />
+              <img src={profile} alt="Bhakti Ramadhani Profile" className="overflow-hidden object-cover w-full h-full object-top" />
             </div>
           </div>
           <div className='flex flex-col justify-center items-center text-center'>
@@ -105,7 +114,7 @@ function App() {
               } />
             </h2>
             <div className='flex items-center mt-2 text-[#444444]'>
-              <img src="src/assets/images/marker.svg" alt="Icon marker" width="24" height="24" className='inline mr-2' />
+              <img src={marker} alt="Icon marker" width="24" height="24" className='inline mr-2' />
               <span className='font-medium text-xs md:text-base'>Banjarmasin, Kalimantan Selatan, Indonesia</span>
             </div>
             <div className='my-8'>
@@ -124,30 +133,30 @@ function App() {
           <div className='w-full py-10'>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8'>
               <div data-aos="fade-up" data-aos-duration="1000" className="w-full h-auto flex flex-col rounded-xl shadow-md overflow-hidden outline outline-1 outline-[#bababa55] hover:!scale-[1.01] hover:shadow-lg transition-all duration-300">
-                <img src="src/assets/images/silantar.png" alt="silantar" className="w-full h-64 object-cover object-top" />
+                <img src={silantar} alt="Silantar" className="w-full h-64 object-cover object-top" />
                 <div className="flex flex-col flex-grow p-5 text-neutral-700">
                   <h3 className='text-xl text-black'>Silantar</h3>
                   <p className='text-[15px] mt-2'>Silantar adalah platform yang dibangun untuk masyarakat bisa melaporkan masalah lingkungan sekitar ke pemerintahan yang bersangkutan.</p>
                   <div className='mt-3 flex items-end gap-3 flex-grow'>
                     {/* teknologi yang dipakai */}
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" className='max-h-6' alt="next js icon" width={24} height={24} />
-                    <img src="src/assets/images/laravel.svg" className='max-h-6' alt="laravel icon" width={24} height={24} />
+                    <img src={laravel} className='max-h-6' alt="laravel icon" width={24} height={24} />
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" className='max-h-6' alt="tailwind css icon" width={24} height={24} />
                   </div>
                   <div className='flex gap-6 mt-6 pt-4 font-semibold text-sm md:text-base border-t'>
                     <a href='https://github.com/Sangoveka-Team/Silantar-KMIPN-V' target='_blank' className='flex items-center gap-2'>
-                      <img src="src/assets/images/github.svg" alt="Github Link" width={24} height={24} />
+                      <img src={github} alt="Github Link" width={24} height={24} />
                       Source Code
                     </a>
                     <a href="https://silantar-kmipn-v.vercel.app" target='_blank' className='flex items-center gap-2'>
-                      <img src="src/assets/images/link.svg" alt="Link" width={24} height={24} />
+                      <img src={link} alt="Link" width={24} height={24} />
                       Live Demo
                     </a>
                   </div>
                 </div>
               </div>
               <div data-aos="fade-up" data-aos-duration="1000" className="w-full h-auto flex flex-col rounded-xl shadow-md overflow-hidden outline outline-1 outline-[#bababa55] hover:!scale-[1.01] hover:shadow-lg transition-all duration-300">
-                <img src="src/assets/images/chemaraya.png" alt="chemaraya" className="w-full h-64 object-cover object-top" />
+                <img src={chemaraya} alt="chemaraya" className="w-full h-64 object-cover object-top" />
                 <div className="flex flex-col flex-grow p-5 text-neutral-700">
                   <h3 className='text-xl text-black'>Chemaraya</h3>
                   <p className='text-[15px] mt-2'>Website yang berguna untuk memudahkan pencinta roti bakar chemaraya dengan fitur utama yang menyediakan informasi produk serta menghubungkan pengguna ke pihak ketiga yaitu Gojek Dan Grab.</p>
@@ -158,11 +167,11 @@ function App() {
                   </div>
                   <div className='flex gap-6 mt-6 pt-4 font-semibold text-sm md:text-base border-t'>
                     <a href='https://github.com/bhaktiramadhani/pbl-semester-3' target='_blank' className='flex items-center gap-2'>
-                      <img src="src/assets/images/github.svg" alt="Github Link" width={24} height={24} />
+                      <img src={github} alt="Github Link" width={24} height={24} />
                       Source Code
                     </a>
                     <a href="https://chemaraya.live" target='_blank' className='flex items-center gap-2'>
-                      <img src="src/assets/images/link.svg" alt="Link" width={24} height={24} />
+                      <img src={link} alt="Link" width={24} height={24} />
                       Live Demo
                     </a>
                   </div>
@@ -196,15 +205,15 @@ function App() {
         <div className="p-4 border-t-2">
           <div className='flex justify-center items-center gap-2 mb-3'>
             <a href="mailto:bakti0048@gmail.com" target='_blank' className='flex items-center font-medium gap-2 p-2'>
-              <img src="src/assets/images/email.svg" alt="email icon" width={20} height={20} />
+              <img src={email} alt="Email icon" width={20} height={20} />
               Email
             </a>
             <a href="https://linkedin.com/in/bhakti-ramadhani/" target='_blank' className='flex items-center font-medium gap-2 p-2'>
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="github icon" width={20} height={20} />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="Linkedin icon" width={20} height={20} />
               Linkedin
             </a>
             <a href="https://instagram.com/bhaktirmdhni" target='_blank' className='flex items-center font-medium gap-2 p-2'>
-              <img src="src/assets/images/instagram.svg" alt="github icon" width={20} height={20} />
+              <img src={instagram} alt="Instagram icon" width={20} height={20} />
               Instagram
             </a>
           </div>
