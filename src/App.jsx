@@ -5,6 +5,7 @@ import instagram from './assets/images/instagram.svg'
 import laravel from './assets/images/laravel.svg'
 import link from './assets/images/link.svg'
 import marker from './assets/images/marker.svg'
+import vite from './assets/images/vite.svg'
 import chemaraya from './assets/images/chemaraya.png'
 import profile from './assets/images/profile.jpg'
 import silantar from './assets/images/silantar.png'
@@ -14,18 +15,19 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const skills = [
-  { name: 'HTML', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
-  { name: 'CSS', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
-  { name: 'Javascript', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-  { name: 'Tailwind CSS', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" },
-  { name: 'Bootstrap', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" },
-  { name: 'React JS', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-  { name: 'Next JS', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
-  { name: 'PHP', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" },
-  { name: 'Laravel', icon_url: laravel },
-  { name: 'MySQL', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
-  { name: 'Git', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
-  { name: 'VS Code', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
+  { name: 'HTML', url: 'https://www.w3schools.com/html/', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+  { name: 'CSS', url: 'https://www.w3schools.com/css/', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+  { name: 'Javascript', url: 'https://www.javascript.com/', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+  { name: 'Tailwind CSS', url: 'https://tailwindcss.com/', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" },
+  { name: 'Bootstrap', url: 'https://getbootstrap.com/', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" },
+  { name: 'React.js', url: 'https://react.dev/', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  { name: 'Next.js', url: 'https://nextjs.org/', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
+  { name: 'PHP', url: 'https://www.php.net/', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" },
+  { name: 'Laravel', url: 'https://laravel.com/', icon_url: laravel },
+  { name: 'MySQL', url: 'https://www.mysql.com/', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+  { name: 'Git', url: 'https://git-scm.com/', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+  { name: 'VS Code', url: 'https://code.visualstudio.com/', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
+  { name: 'Vite.js', url: 'https://vitejs.dev/', icon_url: vite },
 ];
 
 function App() {
@@ -139,9 +141,33 @@ function App() {
                   <p className='text-[15px] mt-2'>Silantar adalah platform yang dibangun untuk masyarakat bisa melaporkan masalah lingkungan sekitar ke pemerintahan yang bersangkutan.</p>
                   <div className='mt-3 flex items-end gap-3 flex-grow'>
                     {/* teknologi yang dipakai */}
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" className='max-h-6' alt="next js icon" width={24} height={24} />
-                    <img src={laravel} className='max-h-6' alt="laravel icon" width={24} height={24} />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" className='max-h-6' alt="tailwind css icon" width={24} height={24} />
+
+                    {/* next js */}
+                    <img data-popover-target="popover-1" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" className='max-h-6' alt="next js icon" width={24} height={24} />
+                    <div data-popover id="popover-1" role="tooltip" className="absolute z-10 invisible inline-block w-auto text-sm text-white transition-opacity duration-300 bg-[#777777] border border-gray-200 rounded-lg shadow-sm opacity-0">
+                      <div className="px-3 py-2">
+                        <p>Next.js</p>
+                      </div>
+                      <div data-popper-arrow></div>
+                    </div>
+
+                    {/* laravel */}
+                    <img data-popover-target="popover-2" src={laravel} className='max-h-6' alt="laravel icon" width={24} height={24} />
+                    <div data-popover id="popover-2" role="tooltip" className="absolute z-10 invisible inline-block w-auto text-sm text-white transition-opacity duration-300 bg-[#777777] border border-gray-200 rounded-lg shadow-sm opacity-0">
+                      <div className="px-3 py-2">
+                        <p>Laravel</p>
+                      </div>
+                      <div data-popper-arrow></div>
+                    </div>
+
+                    {/* Tailwind */}
+                    <img data-popover-target="popover-3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" className='max-h-6' alt="tailwind css icon" width={24} height={24} />
+                    <div data-popover id="popover-3" role="tooltip" className="absolute z-10 invisible inline-block w-auto text-sm text-white transition-opacity duration-300 bg-[#777777] border border-gray-200 rounded-lg shadow-sm opacity-0">
+                      <div className="px-3 py-2">
+                        <p>Tailwind CSS</p>
+                      </div>
+                      <div data-popper-arrow></div>
+                    </div>
                   </div>
                   <div className='flex gap-6 mt-6 pt-4 font-semibold text-sm md:text-base border-t'>
                     <a href='https://github.com/Sangoveka-Team/Silantar-KMIPN-V' target='_blank' className='flex items-center gap-2'>
@@ -162,8 +188,22 @@ function App() {
                   <p className='text-[15px] mt-2'>Website yang berguna untuk memudahkan pencinta roti bakar chemaraya dengan fitur utama yang menyediakan informasi produk serta menghubungkan pengguna ke pihak ketiga yaitu Gojek Dan Grab.</p>
                   <div className='mt-3 flex items-end gap-3 flex-grow'>
                     {/* teknologi yang dipakai */}
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" className='max-h-6' alt="php icon" width={24} height={24} />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" className='max-h-6' alt="tailwind css icon" width={24} height={24} />
+                    {/* php */}
+                    <img data-popover-target="popover-4" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" className='max-h-6' alt="php icon" width={24} height={24} />
+                    <div data-popover id="popover-4" role="tooltip" className="absolute z-10 invisible inline-block w-auto text-sm text-white transition-opacity duration-300 bg-[#777777] border border-gray-200 rounded-lg shadow-sm opacity-0">
+                      <div className="px-3 py-2">
+                        <p>PHP</p>
+                      </div>
+                      <div data-popper-arrow></div>
+                    </div>
+                    {/* Tailwind */}
+                    <img data-popover-target="popover-5" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" className='max-h-6' alt="tailwind css icon" width={24} height={24} />
+                    <div data-popover id="popover-5" role="tooltip" className="absolute z-10 invisible inline-block w-auto text-sm text-white transition-opacity duration-300 bg-[#777777] border border-gray-200 rounded-lg shadow-sm opacity-0">
+                      <div className="px-3 py-2">
+                        <p>Tailwind CSS</p>
+                      </div>
+                      <div data-popper-arrow></div>
+                    </div>
                   </div>
                   <div className='flex gap-6 mt-6 pt-4 font-semibold text-sm md:text-base border-t'>
                     <a href='https://github.com/bhaktiramadhani/pbl-semester-3' target='_blank' className='flex items-center gap-2'>
@@ -189,15 +229,13 @@ function App() {
             <div className="flex flex-wrap justify-center gap-5 text-center">
               {skills.map((skill, index) => {
                 return (
-                  <div key={index} data-aos="zoom-in" data-aos-duration="500" className="flex flex-col justify-center items-center px-10 py-6 bg-[#444444] rounded-xl cursor-pointer shadow-md hover:shadow-lg hover:!scale-105 transition-all duration-200 gap-2" >
-                    <img src={skill.icon_url} width={40} height={40} />
+                  <a href={skill.url} target='_blank' key={index} data-aos="zoom-in" data-aos-duration="500" className="flex flex-col justify-center items-center px-10 py-6 bg-[#444444] rounded-xl cursor-pointer shadow-md hover:shadow-lg hover:!scale-105 transition-all duration-200 gap-2" >
+                    <img src={skill.icon_url} alt={skill.name} width={40} height={40} />
                     <p className="text-white font-medium text-xs">{skill.name}</p>
-                  </div>
+                  </a>
                 )
               })}
             </div>
-
-
           </div>
         </section>
       </main>
