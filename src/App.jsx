@@ -18,7 +18,7 @@ const skills = [
   { name: 'HTML', url: 'https://www.w3schools.com/html/', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
   { name: 'CSS', url: 'https://www.w3schools.com/css/', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
   { name: 'Javascript', url: 'https://www.javascript.com/', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-  { name: 'Tailwind CSS', url: 'https://tailwindcss.com/', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" },
+  { name: 'Tailwind CSS', url: 'https://tailwindcss.com/', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" },
   { name: 'Bootstrap', url: 'https://getbootstrap.com/', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" },
   { name: 'React.js', url: 'https://react.dev/', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
   { name: 'Next.js', url: 'https://nextjs.org/', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
@@ -161,7 +161,7 @@ function App() {
                     </div>
 
                     {/* Tailwind */}
-                    <img data-popover-target="popover-3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" className='max-h-6' alt="tailwind css icon" width={24} height={24} />
+                    <img data-popover-target="popover-3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" className='max-h-6' alt="tailwind css icon" width={24} height={24} />
                     <div data-popover id="popover-3" role="tooltip" className="absolute z-10 invisible inline-block w-auto text-sm text-white transition-opacity duration-300 bg-[#777777] border border-gray-200 rounded-lg shadow-sm opacity-0">
                       <div className="px-3 py-2">
                         <p>Tailwind CSS</p>
@@ -197,7 +197,7 @@ function App() {
                       <div data-popper-arrow></div>
                     </div>
                     {/* Tailwind */}
-                    <img data-popover-target="popover-5" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" className='max-h-6' alt="tailwind css icon" width={24} height={24} />
+                    <img data-popover-target="popover-5" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" className='max-h-6' alt="tailwind css icon" width={24} height={24} />
                     <div data-popover id="popover-5" role="tooltip" className="absolute z-10 invisible inline-block w-auto text-sm text-white transition-opacity duration-300 bg-[#777777] border border-gray-200 rounded-lg shadow-sm opacity-0">
                       <div className="px-3 py-2">
                         <p>Tailwind CSS</p>
@@ -238,6 +238,7 @@ function App() {
             </div>
           </div>
         </section>
+
       </main>
       <footer id="contact">
         <div className="p-4 border-t-2">
