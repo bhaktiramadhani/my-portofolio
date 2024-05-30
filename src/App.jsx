@@ -21,6 +21,7 @@ const skills = [
   { name: 'Tailwind CSS', url: 'https://tailwindcss.com/', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" },
   { name: 'Bootstrap', url: 'https://getbootstrap.com/', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" },
   { name: 'React.js', url: 'https://react.dev/', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  { name: 'React Native', url: 'https://reactnative.dev/', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
   { name: 'Next.js', url: 'https://nextjs.org/', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
   { name: 'PHP', url: 'https://www.php.net/', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" },
   { name: 'Laravel', url: 'https://laravel.com/', icon_url: laravel },
@@ -28,6 +29,7 @@ const skills = [
   { name: 'Git', url: 'https://git-scm.com/', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
   { name: 'VS Code', url: 'https://code.visualstudio.com/', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
   { name: 'Vite.js', url: 'https://vitejs.dev/', icon_url: vite },
+  { name: '.NET', url: 'https://dotnet.microsoft.com/', icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg" },
 ];
 
 function App() {
@@ -120,7 +122,7 @@ function App() {
               <span className='font-medium text-xs md:text-base'>Banjarmasin, Kalimantan Selatan, Indonesia</span>
             </div>
             <div className='my-8'>
-              <p>Saya adalah seorang mahasiswa yang punya rasa penasaran pada bidang Software Developer, sehari hari saya belajar untuk membuat diri berkembang dan memperbanyak pengalaman yang mendorong saya untuk cepat beradaptasi pada bidang ini.</p>
+              <p>Saya adalah seorang mahasiswa yang punya rasa penasaran pada bidang Software Engineer, sehari hari saya belajar untuk membuat diri berkembang dan memperbanyak pengalaman yang mendorong saya untuk cepat beradaptasi pada bidang ini.</p>
             </div>
             <div className="flex gap-4">
               <a href={cv} target='_blank' className="bg-[#555555] text-white text-sm md:text-base px-5 py-3 md:px-6 font-medium hover:bg-[#444444] transition-all rounded-full">Download CV</a>
