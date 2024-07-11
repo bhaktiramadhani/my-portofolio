@@ -122,7 +122,7 @@ function App() {
               <span className='font-medium text-xs md:text-base'>Banjarmasin, Kalimantan Selatan, Indonesia</span>
             </div>
             <div className='my-8'>
-              <p>Saya adalah seorang mahasiswa yang punya rasa penasaran pada bidang Software Engineer, sehari hari saya belajar untuk membuat diri berkembang dan memperbanyak pengalaman yang mendorong saya untuk cepat beradaptasi pada bidang ini.</p>
+              <p>Saya adalah seorang mahasiswa yang punya rasa penasaran pada bidang Software Developer, sehari hari saya belajar untuk membuat diri berkembang dan memperbanyak pengalaman yang mendorong saya untuk cepat beradaptasi pada bidang ini.</p>
             </div>
             <div className="flex gap-4">
               <a href={cv} target='_blank' className="bg-[#555555] text-white text-sm md:text-base px-5 py-3 md:px-6 font-medium hover:bg-[#444444] transition-all rounded-full">Download CV</a>
