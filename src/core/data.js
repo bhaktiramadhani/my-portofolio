@@ -58,6 +58,8 @@ const projects = [
         tech: ".NET",
       },
     ],
+    source: "https://github.com/bhaktiramadhani/Capstone-Dewarupa",
+    demo: "#",
   },
 ];
 
