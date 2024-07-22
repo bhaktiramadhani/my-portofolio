@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Project from "./components/project";
+import Project from "./components/Project";
 import { projects, skills } from "./core/data";
 import Skill from "./components/Skill";
 
