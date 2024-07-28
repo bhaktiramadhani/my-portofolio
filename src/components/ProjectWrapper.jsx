@@ -26,7 +26,7 @@ function ProjectWrapper() {
             Hasil pemecahan masalah dengan Coding yang membuahkan hasil Project
           </p>
         </div>
-        <div className="space-x-3 mr-2 absolute md:relative top-0 right-0">
+        <div className="space-x-3 mr-2 hidden md:block">
           <button
             onClick={() => swiperInstance?.slidePrev()}
             className="bg-[#555555] rounded-full p-1 md:p-2 text-white hover:bg-[#444444] hover:scale-[1.03] transition-all"
@@ -66,7 +66,7 @@ function ProjectWrapper() {
       <Swiper
         onSwiper={(swiper) => (swiperInstance = swiper)}
         modules={[Autoplay]}
-        className="w-full py-6 md:-mx-2 px-2"
+        className="w-full py-6 -mx-2 px-2"
         spaceBetween={32}
         slidesPerView={2}
         breakpoints={{
