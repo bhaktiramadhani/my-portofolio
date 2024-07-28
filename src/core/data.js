@@ -6,6 +6,7 @@ import dewarupa from "../assets/images/dewarupa.png";
 
 const projects = [
   {
+    id: 1,
     img: silantar,
     title: "Silantar",
     desc: "Silantar adalah platform yang dibangun untuk masyarakat bisa melaporkan masalah lingkungan sekitar ke pemerintahan yang bersangkutan.",
@@ -29,6 +30,7 @@ const projects = [
     demo: "https://silantar-kmipn-v.vercel.app/",
   },
   {
+    id: 2,
     img: chemaraya,
     title: "Chemaraya",
     desc: "Website yang berguna untuk memudahkan pencinta roti bakar chemaraya dengan fitur utama yang menyediakan informasi produk serta menghubungkan pengguna ke pihak ketiga yaitu Gojek Dan Grab.",
@@ -48,6 +50,7 @@ const projects = [
     demo: "https://chemaraya.live",
   },
   {
+    id: 3,
     img: dewarupa,
     title: "Capstone Dewarupa - MSIB 6 MariBelajar",
     desc: "Project akhir dari kegiatan belajar selama MSIB 6 di PT MariBelajar Indonesia Cerdas yang saya buat bersama teman-teman adalah website yang memberikan pembelajaran dalam beberapa kategori yaitu Tutorial, Webinar, dan Blog",

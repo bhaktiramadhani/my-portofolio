@@ -3,11 +3,7 @@ import link from "../assets/images/link.svg";
 import TechProject from "./TechProject";
 const Project = ({ img, title, desc, techs, source, demo }) => {
   return (
-    <div
-      data-aos="fade-up"
-      data-aos-duration="1000"
-      className="w-full h-auto flex flex-col rounded-xl shadow-md overflow-hidden outline outline-1 outline-[#bababa55] hover:!scale-[1.01] hover:shadow-lg transition-all duration-300"
-    >
+    <>
       <img
         src={img}
         alt={title}
@@ -38,7 +34,7 @@ const Project = ({ img, title, desc, techs, source, demo }) => {
           </a>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

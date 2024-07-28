@@ -8,9 +8,9 @@ import { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Project from "./components/Project";
-import { projects, skills } from "./core/data";
+import { skills } from "./core/data";
 import Skill from "./components/Skill";
+import ProjectWrapper from "./components/ProjectWrapper";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -178,32 +178,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section id="projects" className="mt-32 scroll-mt-6">
-          <div className="w-full text-center">
-            <h2
-              className="font-bold text-3xl md:text-5xl"
-              data-aos="zoom-in"
-              data-aos-duration="500"
-            >
-              Projects
-            </h2>
-          </div>
-          <div className="w-full py-10">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {projects.map((project, index) => (
-                <Project
-                  key={index}
-                  img={project.img}
-                  title={project.title}
-                  desc={project.desc}
-                  techs={project.techs}
-                  source={project.source}
-                  demo={project.demo}
-                />
-              ))}
-            </div>
-          </div>
-        </section>
+        <ProjectWrapper />
         <section id="skills" className="mt-16 scroll-mt-6">
           <div className="w-full text-center">
             <h2
