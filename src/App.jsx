@@ -8,9 +8,8 @@ import { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { skills } from "./core/data";
-import Skill from "./components/Skill";
 import ProjectWrapper from "./components/ProjectWrapper";
+import SkillWrapper from "./components/SkillWrapper";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -179,30 +178,7 @@ function App() {
           </div>
         </section>
         <ProjectWrapper />
-        <section id="skills" className="mt-16 scroll-mt-6">
-          <div className="w-full text-center">
-            <h2
-              className="font-bold text-3xl md:text-5xl"
-              data-aos="zoom-in"
-              data-aos-duration="500"
-            >
-              Skills
-            </h2>
-          </div>
-          <div className="w-full py-10">
-            <div className="flex flex-wrap justify-center gap-5 text-center">
-              {skills.map((skill, index) => {
-                return (
-                  <Skill
-                    url={skill.url}
-                    icon_url={skill.icon_url}
-                    name={skill.name}
-                  />
-                );
-              })}
-            </div>
-          </div>
-        </section>
+        <SkillWrapper />
       </main>
       <footer id="contact">
         <div className="p-4 border-t-2">

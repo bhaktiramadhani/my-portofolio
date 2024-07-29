@@ -9,7 +9,7 @@ function ProjectWrapper() {
   let swiperInstance = null;
   return (
     <section id="projects" className="mt-32 scroll-mt-6">
-      <div className="w-full flex items-center justify-between relative">
+      <div className="w-full flex items-center justify-between">
         <div className="space-y-2">
           <h2
             className="font-bold text-3xl md:text-4xl"
@@ -23,7 +23,8 @@ function ProjectWrapper() {
             data-aos="fade"
             data-aos-duration="500"
           >
-            Hasil pemecahan masalah dengan Coding yang membuahkan hasil Project
+            Project-project yang saya kembangkan melalui pemecahan masalah
+            dengan <b className="text-[#555555]">Coding</b>.
           </p>
         </div>
         <div className="space-x-3 mr-2 hidden md:block">

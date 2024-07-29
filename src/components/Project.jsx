@@ -14,9 +14,9 @@ const Project = ({ img, title, desc, techs, source, demo }) => {
         <p className="text-[15px] mt-2">{desc}</p>
         <div className="mt-3 flex items-end gap-3 flex-grow">
           {/* teknologi yang dipakai */}
-          {techs.map((tech) => (
+          {techs.map((tech, index) => (
             <TechProject
-              key={tech}
+              key={index}
               title={title}
               imgTech={tech.imgTech}
               tech={tech.tech}
