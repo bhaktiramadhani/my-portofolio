@@ -192,7 +192,7 @@ function App() {
               Email
             </a>
             <a
-              href="https://linkedin.com/in/bhakti-ramadhani/"
+              href="https://linkedin.com/in/bhaktiramadhani/"
               target="_blank"
               className="flex items-center font-medium gap-2 p-2"
             >
