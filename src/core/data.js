@@ -3,6 +3,8 @@ import laravel from "../assets/images/laravel.svg";
 import silantar from "../assets/images/silantar.png";
 import chemaraya from "../assets/images/chemaraya.png";
 import dewarupa from "../assets/images/dewarupa.png";
+import itechpoliban from "../assets/images/itechpoliban.png";
+import filament from "../assets/images/filament.svg";
 
 const projects = [
   {
@@ -63,6 +65,34 @@ const projects = [
     ],
     source: "https://github.com/bhaktiramadhani/Capstone-Dewarupa",
     demo: "#",
+  },
+  {
+    id: 4,
+    img: itechpoliban,
+    title: "Komunitas iTech Poliban",
+    desc: "Website yang dibuat untuk memperkenalkan komunitas iTech Poliban kepada seluruh mahasiswa",
+    techs: [
+      {
+        imgTech:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+        tech: "Tailwind CSS",
+      },
+      {
+        imgTech: laravel,
+        tech: "Laravel",
+      },
+      {
+        imgTech:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        tech: "React.js",
+      },
+      {
+        imgTech: filament,
+        tech: "Filament",
+      },
+    ],
+    source: "#",
+    demo: "https://itechpoliban.com",
   },
 ];
 
@@ -146,6 +176,11 @@ const skills = [
     url: "https://dotnet.microsoft.com/",
     icon_url:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg",
+  },
+  {
+    name: "Filament",
+    url: "https://filament.dev/",
+    icon_url: filament,
   },
 ];
 
