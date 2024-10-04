@@ -66,7 +66,7 @@ function CertificateWrapper() {
             loop={true}
             breakpoints={{
               360: {
-                slidesPerView: 2,
+                slidesPerView: 1,
               },
               768: {
                 slidesPerView: 3,
