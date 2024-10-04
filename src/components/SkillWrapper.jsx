@@ -13,7 +13,7 @@ function SkillWrapper() {
           >
             Skills
           </h2>
-          <p
+          {/* <p
             className="text-neutral-500 text-sm md:text-base"
             data-aos="fade"
             data-aos-duration="500"
@@ -22,7 +22,7 @@ function SkillWrapper() {
             <b className="text-[#555555]">Teknologi</b>,{" "}
             <b className="text-[#555555]">Framework</b>, dan{" "}
             <b className="text-[#555555]">Tools</b>.
-          </p>
+          </p> */}
         </div>
         <div className="w-full py-10">
           <div className="flex flex-wrap justify-center gap-5 text-center">

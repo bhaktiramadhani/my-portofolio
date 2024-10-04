@@ -184,4 +184,83 @@ const skills = [
   },
 ];
 
-export { projects, skills };
+const certificates = [
+  {
+    id: 1,
+    title: "E-GOVERNMENT KMIPN V",
+    image: "E-GOVERNMENT_BHAKTI_RAMADHANI.jpg",
+  },
+  {
+    id: 2,
+    title: "Junior Web Developer",
+    image: "Sertifikat_BHAKTI_RAMADHANI_Junior_Web_Developer.jpg",
+  },
+  {
+    id: 3,
+    title: "Belajar Membuat Aplikasi Web dengan React",
+    image: "DICODING_Belajar_Membuat_Aplikasi_Web_dengan_React.jpg",
+  },
+  {
+    id: 4,
+    title: "Belajar Membuat Front-End Web untuk Pemula",
+    image: "DICODING_Belajar_Membuat_Front-End_Web_untuk_Pemula.jpg",
+  },
+  {
+    id: 5,
+    title: "Belajar Dasar Pemrograman JavaScript",
+    image: "DICODING_Belajar_Dasar_Pemrograman_JavaScript.jpg",
+  },
+  {
+    id: 6,
+    title: "Microsoft Certified Power Platform Fundamentals",
+    image: "Microsoft_Certified_Power_Platform_Fundamentals.jpg",
+  },
+  {
+    id: 7,
+    title: "Belajar Dasar Pemrograman Web",
+    image: "DICODING_Belajar_Dasar_Pemrograman_Web.jpg",
+  },
+  {
+    id: 8,
+    title: "Certificate Kelulusan Studi Independen MariBelajar",
+    image:
+      "BHAKTI_RAMADHANI_Certificate_Kelulusan_Studi_Independen_MariBelajar.jpg",
+  },
+  {
+    id: 9,
+    title: "Kewirausahaan Digital Dasar",
+    image: "Sertifikat_BHAKTI_RAMADHANI_Kewirausahaan_Digital_Dasar.jpg",
+  },
+  {
+    id: 10,
+    title: "Cloud Practitioner Essentials Belajar Dasar AWS Cloud",
+    image: "DICODING_Cloud_Practitioner_Essentials_Belajar Dasar_AWS_Cloud.jpg",
+  },
+  {
+    id: 11,
+    title: "Kompetensi Pengembangan Aplikasi Web",
+    image: "Sertifikat_Kompetensi_Pengembangan_Aplikasi_Web.jpg",
+  },
+  {
+    id: 12,
+    title: "Kompetensi Azure Fundamental",
+    image: "Sertifikat_Kompetensi_Azure_Fundamental.jpg",
+  },
+  {
+    id: 13,
+    title: "Belajar Dasar Visualisasi Data",
+    image: "DICODING_Belajar_Dasar_Visualisasi_Data.jpg",
+  },
+  {
+    id: 14,
+    title: "Belajar Dasar Manajemen Proyek",
+    image: "DICODING_Belajar_Dasar_Manajemen_Proyek.jpg",
+  },
+  {
+    id: 15,
+    title: "Kepesertaan MSIB 6",
+    image: "Sertifikat_Kepesertaan_MSIB_6.jpg",
+  },
+];
+
+export { projects, skills, certificates };

@@ -10,6 +10,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import ProjectWrapper from "./components/ProjectWrapper";
 import SkillWrapper from "./components/SkillWrapper";
+import BlogWrapper from "./components/BlogWrapper";
+import ExperienceWrapper from "./components/ExperienceWrapper";
+import CertificateWrapper from "./components/CertificateWrapper";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -101,7 +104,14 @@ function App() {
             <li
               className="my-3"
               onClick={() => setTimeout(() => setOpen(false), 200)}
-            ></li>
+            >
+              <a
+                href="#Certificate"
+                className="relative transition-all duration-500 ease-in-out hover:text-[#555555] after:content-[''] after:w-0 after:h-[2px] after:block after:bg-[#555555] after:absolute after:left-1/2 hover:after:w-full hover:after:left-0 after:transition-all"
+              >
+                Certificate
+              </a>
+            </li>
           </ul>
         </nav>
         <a href="https://github.com/bhaktiramadhani" target="_blank">
@@ -178,7 +188,10 @@ function App() {
           </div>
         </section>
         <ProjectWrapper />
+        {/* <ExperienceWrapper /> */}
+        {/* <BlogWrapper /> */}
         <SkillWrapper />
+        <CertificateWrapper />
       </main>
       <footer id="contact">
         <div className="p-4 border-t-2">

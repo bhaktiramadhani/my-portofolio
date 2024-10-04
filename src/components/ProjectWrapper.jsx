@@ -18,14 +18,14 @@ function ProjectWrapper() {
           >
             Projects
           </h2>
-          <p
+          {/* <p
             className="text-neutral-500 text-sm md:text-base"
             data-aos="fade"
             data-aos-duration="500"
           >
             Project-project yang saya kembangkan melalui pemecahan masalah
             dengan <b className="text-[#555555]">Coding</b>.
-          </p>
+          </p> */}
         </div>
         <div className="space-x-3 mr-2 hidden md:block">
           <button
