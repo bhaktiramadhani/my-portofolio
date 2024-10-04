@@ -89,7 +89,7 @@ function CertificateWrapper() {
                   </h3>
                   <img
                     className="h-auto max-w-full rounded-lg"
-                    src={`src/assets/images/certificate/${certificate.image}`}
+                    src={certificate.image}
                     alt={certificate.title}
                   />
                 </SwiperSlide>

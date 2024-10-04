@@ -5,6 +5,21 @@ import chemaraya from "../assets/images/chemaraya.png";
 import dewarupa from "../assets/images/dewarupa.png";
 import itechpoliban from "../assets/images/itechpoliban.png";
 import filament from "../assets/images/filament.svg";
+import e_government from "../assets/images/certificate/E-GOVERNMENT_BHAKTI_RAMADHANI.jpg";
+import junior_web_developer from "../assets/images/certificate/Sertifikat_BHAKTI_RAMADHANI_Junior_Web_Developer.jpg";
+import react_web_app from "../assets/images/certificate/DICODING_Belajar_Membuat_Aplikasi_Web_dengan_React.jpg";
+import front_end_web from "../assets/images/certificate/DICODING_Belajar_Membuat_Front-End_Web_untuk_Pemula.jpg";
+import js_programming from "../assets/images/certificate/DICODING_Belajar_Dasar_Pemrograman_JavaScript.jpg";
+import power_platform from "../assets/images/certificate/Microsoft_Certified_Power_Platform_Fundamentals.jpg";
+import web_programming from "../assets/images/certificate/DICODING_Belajar_Dasar_Pemrograman_Web.jpg";
+import independent_study_certificate from "../assets/images/certificate/BHAKTI_RAMADHANI_Certificate_Kelulusan_Studi_Independen_MariBelajar.jpg";
+import digital_entrepreneurship from "../assets/images/certificate/Sertifikat_BHAKTI_RAMADHANI_Kewirausahaan_Digital_Dasar.jpg";
+import aws_cloud from "../assets/images/certificate/DICODING_Cloud_Practitioner_Essentials_Belajar_Dasar_AWS_Cloud.jpg";
+import web_development_competency from "../assets/images/certificate/Sertifikat_Kompetensi_Pengembangan_Aplikasi_Web.jpg";
+import azure_fundamental from "../assets/images/certificate/Sertifikat_Kompetensi_Azure_Fundamental.jpg";
+import data_visualization from "../assets/images/certificate/DICODING_Belajar_Dasar_Visualisasi_Data.jpg";
+import project_management from "../assets/images/certificate/DICODING_Belajar_Dasar_Manajemen_Proyek.jpg";
+import msib_6 from "../assets/images/certificate/Sertifikat_Kepesertaan_MSIB_6.jpg";
 
 const projects = [
   {
@@ -187,79 +202,78 @@ const skills = [
 const certificates = [
   {
     id: 1,
-    title: "E-GOVERNMENT KMIPN V",
-    image: "E-GOVERNMENT_BHAKTI_RAMADHANI.jpg",
+    title: "E-GOVERNMENT",
+    image: e_government,
   },
   {
     id: 2,
     title: "Junior Web Developer",
-    image: "Sertifikat_BHAKTI_RAMADHANI_Junior_Web_Developer.jpg",
+    image: junior_web_developer,
   },
   {
     id: 3,
     title: "Belajar Membuat Aplikasi Web dengan React",
-    image: "DICODING_Belajar_Membuat_Aplikasi_Web_dengan_React.jpg",
+    image: react_web_app,
   },
   {
     id: 4,
     title: "Belajar Membuat Front-End Web untuk Pemula",
-    image: "DICODING_Belajar_Membuat_Front-End_Web_untuk_Pemula.jpg",
+    image: front_end_web,
   },
   {
     id: 5,
     title: "Belajar Dasar Pemrograman JavaScript",
-    image: "DICODING_Belajar_Dasar_Pemrograman_JavaScript.jpg",
+    image: js_programming,
   },
   {
     id: 6,
     title: "Microsoft Certified Power Platform Fundamentals",
-    image: "Microsoft_Certified_Power_Platform_Fundamentals.jpg",
+    image: power_platform,
   },
   {
     id: 7,
     title: "Belajar Dasar Pemrograman Web",
-    image: "DICODING_Belajar_Dasar_Pemrograman_Web.jpg",
+    image: web_programming,
   },
   {
     id: 8,
     title: "Certificate Kelulusan Studi Independen MariBelajar",
-    image:
-      "BHAKTI_RAMADHANI_Certificate_Kelulusan_Studi_Independen_MariBelajar.jpg",
+    image: independent_study_certificate,
   },
   {
     id: 9,
     title: "Kewirausahaan Digital Dasar",
-    image: "Sertifikat_BHAKTI_RAMADHANI_Kewirausahaan_Digital_Dasar.jpg",
+    image: digital_entrepreneurship,
   },
   {
     id: 10,
     title: "Cloud Practitioner Essentials Belajar Dasar AWS Cloud",
-    image: "DICODING_Cloud_Practitioner_Essentials_Belajar Dasar_AWS_Cloud.jpg",
+    image: aws_cloud,
   },
   {
     id: 11,
     title: "Kompetensi Pengembangan Aplikasi Web",
-    image: "Sertifikat_Kompetensi_Pengembangan_Aplikasi_Web.jpg",
+    image: web_development_competency,
   },
   {
     id: 12,
     title: "Kompetensi Azure Fundamental",
-    image: "Sertifikat_Kompetensi_Azure_Fundamental.jpg",
+    image: azure_fundamental,
   },
   {
     id: 13,
     title: "Belajar Dasar Visualisasi Data",
-    image: "DICODING_Belajar_Dasar_Visualisasi_Data.jpg",
+    image: data_visualization,
   },
   {
     id: 14,
     title: "Belajar Dasar Manajemen Proyek",
-    image: "DICODING_Belajar_Dasar_Manajemen_Proyek.jpg",
+    image: project_management,
   },
   {
     id: 15,
     title: "Kepesertaan MSIB 6",
-    image: "Sertifikat_Kepesertaan_MSIB_6.jpg",
+    image: msib_6,
   },
 ];
 
