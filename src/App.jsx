@@ -174,13 +174,13 @@ function App() {
               <a
                 href={cv}
                 target="_blank"
-                className="bg-[#555555] text-white text-sm md:text-base px-5 py-3 md:px-6 font-medium hover:bg-[#444444] transition-all rounded-full"
+                className="btn bg-[#555555] text-white text-sm md:text-base px-5 py-3 md:px-6 font-medium hover:bg-[#444444] transition-all rounded-full"
               >
                 Download CV
               </a>
               <a
                 href="#contact"
-                className="text-[#555555] outline outline-1 outline-[#555555] text-sm md:text-base px-5 py-3 md:px-6 font-medium hover:bg-[#444444]  hover:text-white transition-all rounded-full"
+                className="btn text-[#555555] outline outline-1 hover:outline-[#555555] text-sm md:text-base px-5 py-3 md:px-6 font-medium hover:bg-[#444444]  hover:text-white transition-all rounded-full bg-white"
               >
                 Contact Info
               </a>
@@ -188,7 +188,7 @@ function App() {
           </div>
         </section>
         <ProjectWrapper />
-        {/* <ExperienceWrapper /> */}
+        <ExperienceWrapper />
         {/* <BlogWrapper /> */}
         <SkillWrapper />
         <CertificateWrapper />

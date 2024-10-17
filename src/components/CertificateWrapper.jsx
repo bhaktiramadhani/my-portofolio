@@ -21,7 +21,7 @@ function CertificateWrapper() {
           <div className="space-x-3 mr-2 hidden md:block">
             <button
               onClick={() => swiperInstance?.slidePrev()}
-              className="bg-[#555555] rounded-full p-1 md:p-2 text-white hover:bg-[#444444] hover:scale-[1.03] transition-all"
+              className="btn bg-[#555555] rounded-full p-3 text-white hover:bg-[#444444] hover:scale-[1.03] transition-all"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@ function CertificateWrapper() {
             </button>
             <button
               onClick={() => swiperInstance?.slideNext()}
-              className="bg-[#555555] rounded-full p-1 md:p-2 text-white hover:bg-[#444444] hover:scale-[1.03] transition-all"
+              className="btn bg-[#555555] rounded-full p-3 text-white hover:bg-[#444444] hover:scale-[1.03] transition-all"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
