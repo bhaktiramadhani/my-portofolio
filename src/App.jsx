@@ -95,6 +95,17 @@ function App() {
               onClick={() => setTimeout(() => setOpen(false), 200)}
             >
               <a
+                href="#experience"
+                className="relative transition-all duration-500 ease-in-out hover:text-[#555555] after:content-[''] after:w-0 after:h-[2px] after:block after:bg-[#555555] after:absolute after:left-1/2 hover:after:w-full hover:after:left-0 after:transition-all"
+              >
+                Experience
+              </a>
+            </li>
+            <li
+              className="my-3"
+              onClick={() => setTimeout(() => setOpen(false), 200)}
+            >
+              <a
                 href="#skills"
                 className="relative transition-all duration-500 ease-in-out hover:text-[#555555] after:content-[''] after:w-0 after:h-[2px] after:block after:bg-[#555555] after:absolute after:left-1/2 hover:after:w-full hover:after:left-0 after:transition-all"
               >
