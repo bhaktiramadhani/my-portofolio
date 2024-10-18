@@ -20,6 +20,8 @@ import azure_fundamental from "../assets/images/certificate/Sertifikat_Kompetens
 import data_visualization from "../assets/images/certificate/DICODING_Belajar_Dasar_Visualisasi_Data.jpg";
 import project_management from "../assets/images/certificate/DICODING_Belajar_Dasar_Manajemen_Proyek.jpg";
 import msib_6 from "../assets/images/certificate/Sertifikat_Kepesertaan_MSIB_6.jpg";
+import umkmsehati from "../assets/images/umkmsehati.png";
+import bakunjangan from "../assets/images/bakunjangan.png";
 
 const projects = [
   {
@@ -70,7 +72,7 @@ const projects = [
     id: 3,
     img: dewarupa,
     title: "Capstone Dewarupa - MSIB 6 MariBelajar",
-    desc: "Project akhir dari kegiatan belajar selama MSIB 6 di PT MariBelajar Indonesia Cerdas yang saya buat bersama teman-teman adalah website yang memberikan pembelajaran dalam beberapa kategori yaitu Tutorial, Webinar, dan Blog",
+    desc: "Project akhir MSIB 6 di PT MariBelajar Indonesia Cerdas, website yang memberikan pembelajaran dalam beberapa kategori yaitu Tutorial, Webinar, dan Blog",
     techs: [
       {
         imgTech:
@@ -108,6 +110,52 @@ const projects = [
     ],
     source: "#",
     demo: "https://itechpoliban.com",
+  },
+  {
+    id: 5,
+    img: umkmsehati,
+    title: "UMKM Sehati",
+    desc: "Platform yang mendukung pengrajin lokal untuk mendigitalisasikan produknya ke masyarakat luas diluar jangkauan.",
+    techs: [
+      {
+        imgTech: laravel,
+        tech: "Laravel",
+      },
+      {
+        imgTech:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+        tech: "Tailwind CSS",
+      },
+      {
+        imgTech: filament,
+        tech: "Filament",
+      },
+    ],
+    source: "#",
+    demo: "https://umkmsehati.com",
+  },
+  {
+    id: 6,
+    img: bakunjangan,
+    title: "Bakunjangan",
+    desc: "Website yang berisi informasi-informasi pariwisata untuk memudahkan masyarakat mengetahui pariwisata yang ada disekitar.",
+    techs: [
+      {
+        imgTech: laravel,
+        tech: "Laravel",
+      },
+      {
+        imgTech:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+        tech: "Tailwind CSS",
+      },
+      {
+        imgTech: filament,
+        tech: "Filament",
+      },
+    ],
+    source: "#",
+    demo: "https://bakunjangan.com",
   },
 ];
 

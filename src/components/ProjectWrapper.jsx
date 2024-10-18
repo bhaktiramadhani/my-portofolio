@@ -78,7 +78,7 @@ function ProjectWrapper() {
             slidesPerView: 2,
           },
           1024: {
-            slidesPerView: 2,
+            slidesPerView: 3,
           },
         }}
         allowSlideNext={true}
@@ -89,21 +89,23 @@ function ProjectWrapper() {
           disableOnInteraction: false,
         }}
       >
-        {projects.map((project, index) => (
-          <SwiperSlide
-            className="w-full h-auto flex flex-col rounded-xl shadow-md overflow-hidden outline outline-1 outline-[#bababa55] hover:!scale-[1.01] hover:shadow-lg transition-all duration-300"
-            key={index}
-          >
-            <Project
-              img={project.img}
-              title={project.title}
-              desc={project.desc}
-              techs={project.techs}
-              source={project.source}
-              demo={project.demo}
-            />
-          </SwiperSlide>
-        ))}
+        {projects
+          .sort((a, b) => b.id - a.id)
+          .map((project, index) => (
+            <SwiperSlide
+              className="w-full h-auto flex flex-col rounded-xl shadow-md overflow-hidden outline outline-1 outline-[#bababa55] hover:!scale-[1.01] hover:shadow-lg transition-all duration-300"
+              key={index}
+            >
+              <Project
+                img={project.img}
+                title={project.title}
+                desc={project.desc}
+                techs={project.techs}
+                source={project.source}
+                demo={project.demo}
+              />
+            </SwiperSlide>
+          ))}
       </Swiper>
     </section>
   );

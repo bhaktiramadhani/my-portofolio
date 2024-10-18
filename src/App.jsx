@@ -176,9 +176,9 @@ function App() {
             <div className="my-8">
               <p>
                 Saya adalah seorang mahasiswa yang punya rasa penasaran pada
-                bidang Software Developer, sehari hari saya belajar untuk
-                membuat diri berkembang dan memperbanyak pengalaman yang
-                mendorong saya untuk cepat beradaptasi pada bidang ini.
+                bidang Web Developer, sehari hari saya belajar untuk membuat
+                diri berkembang dan memperbanyak pengalaman yang mendorong saya
+                untuk cepat beradaptasi pada bidang ini.
               </p>
             </div>
             <div className="flex gap-4">
