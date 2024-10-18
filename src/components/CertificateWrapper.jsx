@@ -82,7 +82,10 @@ function CertificateWrapper() {
           >
             {certificates.map((certificate) => {
               return (
-                <SwiperSlide className="flex flex-col gap-4 justify-center items-center shadow-lg rounded-lg group relative transition-all cursor-pointer">
+                <SwiperSlide
+                  key={certificate.id}
+                  className="flex flex-col gap-4 justify-center items-center shadow-lg rounded-lg group relative transition-all cursor-pointer"
+                >
                   <div class="absolute rounded-lg group-hover:inset-0 bg-gradient-to-b from-[rgba(0,0,0,.54)] to-[rgba(0,0,0,.54)] group-hover:transition group-hover:duration-1000 group-hover:ease-in"></div>
                   <h3 className="absolute hidden group-hover:block text-white text-center px-3">
                     {certificate.title}
