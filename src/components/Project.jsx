@@ -4,11 +4,13 @@ import TechProject from "./TechProject";
 const Project = ({ img, title, desc, techs, source, demo }) => {
   return (
     <>
-      <img
-        src={img}
-        alt={title}
-        className="w-full h-64 object-cover object-top"
-      />
+      <div className="overflow-hidden">
+        <img
+          src={img}
+          alt={title}
+          className="w-full h-64 object-cover object-top hover:scale-105 transition-all duration-500"
+        />
+      </div>
       <div className="flex flex-col flex-grow p-5 text-neutral-700">
         <h3 className="text-xl text-black">{title}</h3>
         <p className="text-[15px] mt-2">{desc}</p>
