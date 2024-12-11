@@ -11,8 +11,8 @@ const Project = ({ img, title, desc, techs, source, demo }) => {
           className="w-full h-64 object-cover object-top hover:scale-105 transition-all duration-500"
         />
       </div>
-      <div className="flex flex-col flex-grow p-5 text-neutral-700">
-        <h3 className="text-xl text-black">{title}</h3>
+      <div className="flex flex-col flex-grow p-5 text-neutral-700 dark:text-black">
+        <h3 className="text-xl text-black dark:text-black">{title}</h3>
         <p className="text-[15px] mt-2">{desc}</p>
         <div className="mt-3 flex items-end gap-3 flex-grow">
           {/* teknologi yang dipakai */}

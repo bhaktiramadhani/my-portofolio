@@ -64,7 +64,7 @@ function App() {
           <ul
             className={`${
               open
-                ? "fixed top-0 left-0 w-full h-screen flex flex-col items-center justify-center z-10 bg-white"
+                ? "fixed top-0 left-0 w-full h-screen flex flex-col items-center justify-center z-10 bg-white dark:bg-black"
                 : "hidden"
             } gap-8 font-medium text-2xl md:flex`}
           >
@@ -74,7 +74,7 @@ function App() {
             >
               <a
                 href="#home"
-                className="relative transition-all duration-500 ease-in-out hover:text-[rgb(85,85,85)] after:content-[''] after:w-0 after:h-[2px] after:block after:bg-[#555555] after:absolute after:left-1/2 hover:after:w-full hover:after:left-0 after:transition-all"
+                className="relative transition-all duration-500 ease-in-out hover:text-[rgb(85,85,85)] after:content-[''] after:w-0 after:h-[2px] after:block after:bg-[#555555] after:absolute after:left-1/2 hover:after:w-full hover:after:left-0 after:transition-all dark:text-white"
               >
                 Home
               </a>
@@ -85,7 +85,7 @@ function App() {
             >
               <a
                 href="#projects"
-                className="relative transition-all duration-500 ease-in-out hover:text-[#555555] after:content-[''] after:w-0 after:h-[2px] after:block after:bg-[#555555] after:absolute after:left-1/2 hover:after:w-full hover:after:left-0 after:transition-all"
+                className="relative transition-all duration-500 ease-in-out hover:text-[#555555] after:content-[''] after:w-0 after:h-[2px] after:block after:bg-[#555555] after:absolute after:left-1/2 hover:after:w-full hover:after:left-0 after:transition-all dark:text-white"
               >
                 Projects
               </a>
@@ -96,7 +96,7 @@ function App() {
             >
               <a
                 href="#experience"
-                className="relative transition-all duration-500 ease-in-out hover:text-[#555555] after:content-[''] after:w-0 after:h-[2px] after:block after:bg-[#555555] after:absolute after:left-1/2 hover:after:w-full hover:after:left-0 after:transition-all"
+                className="relative transition-all duration-500 ease-in-out hover:text-[#555555] after:content-[''] after:w-0 after:h-[2px] after:block after:bg-[#555555] after:absolute after:left-1/2 hover:after:w-full hover:after:left-0 after:transition-all dark:text-white"
               >
                 Experience
               </a>
@@ -107,7 +107,7 @@ function App() {
             >
               <a
                 href="#skills"
-                className="relative transition-all duration-500 ease-in-out hover:text-[#555555] after:content-[''] after:w-0 after:h-[2px] after:block after:bg-[#555555] after:absolute after:left-1/2 hover:after:w-full hover:after:left-0 after:transition-all"
+                className="relative transition-all duration-500 ease-in-out hover:text-[#555555] after:content-[''] after:w-0 after:h-[2px] after:block after:bg-[#555555] after:absolute after:left-1/2 hover:after:w-full hover:after:left-0 after:transition-all dark:text-white"
               >
                 Skills
               </a>
@@ -118,7 +118,7 @@ function App() {
             >
               <a
                 href="#Certificate"
-                className="relative transition-all duration-500 ease-in-out hover:text-[#555555] after:content-[''] after:w-0 after:h-[2px] after:block after:bg-[#555555] after:absolute after:left-1/2 hover:after:w-full hover:after:left-0 after:transition-all"
+                className="relative transition-all duration-500 ease-in-out hover:text-[#555555] after:content-[''] after:w-0 after:h-[2px] after:block after:bg-[#555555] after:absolute after:left-1/2 hover:after:w-full hover:after:left-0 after:transition-all dark:text-white"
               >
                 Certificate
               </a>
@@ -145,12 +145,12 @@ function App() {
               />
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center text-center">
+          <div className="flex flex-col justify-center items-center text-center dark:text-white">
             <h2 className="font-semibold text-base">Haloo, Saya</h2>
             <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl mt-4">
               Bhakti Ramadhani
             </h1>
-            <h2 className="font-bold text-xl md:text-2xl text-[#555555] mt-2">
+            <h2 className="font-bold text-xl md:text-2xl text-[#555555] dark:text-white mt-2">
               <Typewriter
                 options={{
                   strings: ["Front-end Developer", "Back-end Developer"],
@@ -161,7 +161,7 @@ function App() {
                 }}
               />
             </h2>
-            <div className="flex items-center mt-2 text-[#444444]">
+            <div className="flex items-center mt-2 text-[#444444] dark:text-white">
               <img
                 src={marker}
                 alt="Icon marker"
@@ -191,7 +191,7 @@ function App() {
               </a>
               <a
                 href="#contact"
-                className="btn text-[#555555] outline outline-1 hover:outline-[#555555] text-sm md:text-base px-5 py-3 md:px-6 font-medium hover:bg-[#444444]  hover:text-white transition-all rounded-full bg-white"
+                className="btn text-[#555555]  text-sm md:text-base px-5 py-3 md:px-6 font-medium hover:bg-[#444444]  hover:text-white transition-all rounded-full bg-white"
               >
                 Contact Info
               </a>
@@ -210,7 +210,7 @@ function App() {
             <a
               href="mailto:bakti0048@gmail.com"
               target="_blank"
-              className="flex items-center font-medium gap-2 p-2"
+              className="flex items-center font-medium gap-2 p-2 dark:text-white"
             >
               <img src={email} alt="Email icon" width={20} height={20} />
               Email
@@ -218,7 +218,7 @@ function App() {
             <a
               href="https://linkedin.com/in/bhaktiramadhani/"
               target="_blank"
-              className="flex items-center font-medium gap-2 p-2"
+              className="flex items-center font-medium gap-2 p-2 dark:text-white"
             >
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
@@ -231,7 +231,7 @@ function App() {
             <a
               href="https://instagram.com/bhaktirmdhni"
               target="_blank"
-              className="flex items-center font-medium gap-2 p-2"
+              className="flex items-center font-medium gap-2 p-2 dark:text-white"
             >
               <img
                 src={instagram}
@@ -242,7 +242,7 @@ function App() {
               Instagram
             </a>
           </div>
-          <p className="text-center text-neutral-500">
+          <p className="text-center text-neutral-500 dark:text-white">
             Copyright © 2024. Bhakti Ramadhani
           </p>
         </div>

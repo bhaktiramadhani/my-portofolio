@@ -12,7 +12,7 @@ function CertificateWrapper() {
       <div className="w-full flex flex-col">
         <div className="space-y-2 flex items-center justify-between">
           <h2
-            className="font-bold text-3xl md:text-4xl"
+            className="font-bold text-3xl md:text-4xl dark:text-white"
             data-aos="zoom-in"
             data-aos-duration="500"
           >

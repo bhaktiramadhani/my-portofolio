@@ -7,7 +7,7 @@ function SkillWrapper() {
       <div>
         <div className="space-y-2">
           <h2
-            className="font-bold text-3xl md:text-4xl"
+            className="font-bold text-3xl md:text-4xl dark:text-white"
             data-aos="zoom-in"
             data-aos-duration="500"
           >

@@ -9,7 +9,7 @@ function ExperienceWrapper() {
       <div className="w-full flex flex-col">
         <div className="space-y-2">
           <h2
-            className="font-bold text-3xl md:text-4xl"
+            className="font-bold text-3xl md:text-4xl dark:text-white"
             data-aos="zoom-in"
             data-aos-duration="500"
           >
@@ -17,10 +17,10 @@ function ExperienceWrapper() {
           </h2>
         </div>
         <div className="mt-10">
-          <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical">
+          <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical dark:text-white">
             <li>
               <div className="timeline-middle">
-                <div className="border-2 border-slate-500 rounded-full">
+                <div className="border-2 border-slate-500 dark:border-white rounded-full">
                   <img
                     src={logoLLDIKTI}
                     alt="Logo LLDIKTI Wilayah XI"
@@ -48,7 +48,7 @@ function ExperienceWrapper() {
             <li>
               <hr />
               <div className="timeline-middle">
-                <div className="border-2 border-slate-500 rounded-full">
+                <div className="border-2 border-slate-500 dark:border-white rounded-full">
                   <img
                     src={logoMaribelajar}
                     alt="Logo Mari Belajar"

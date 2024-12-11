@@ -12,7 +12,7 @@ function ProjectWrapper() {
       <div className="w-full flex items-center justify-between">
         <div className="space-y-2">
           <h2
-            className="font-bold text-3xl md:text-4xl"
+            className="font-bold text-3xl md:text-4xl dark:text-white"
             data-aos="zoom-in"
             data-aos-duration="500"
           >
@@ -93,7 +93,7 @@ function ProjectWrapper() {
           .sort((a, b) => b.id - a.id)
           .map((project, index) => (
             <SwiperSlide
-              className="w-full h-auto flex flex-col rounded-xl shadow-md overflow-hidden outline outline-1 outline-[#bababa55] hover:!scale-[1.01] hover:shadow-lg transition-all duration-300"
+              className="w-full h-auto flex flex-col rounded-xl shadow-md overflow-hidden outline outline-1 outline-[#bababa55] hover:!scale-[1.01] hover:shadow-lg transition-all duration-300 dark:bg-white"
               key={index}
             >
               <Project
