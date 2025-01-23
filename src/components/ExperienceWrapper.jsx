@@ -29,9 +29,12 @@ function ExperienceWrapper() {
                 </div>
               </div>
               <div className="timeline-end mb-10 ml-3">
-                <time>Sep 2024 - Sekarang</time>
+                <time>September 2024 - Desember 2024</time>
                 <div className="text-lg font-black">
-                  IT Internship at LLDIKTI Wilayah XI
+                  Lembaga Layanan Pendidikan Tinggi (LLDIKTI) Wilayah XI
+                </div>
+                <div className="text-lg font-black">
+                  Magang IT dan Staff Administrasi
                 </div>
                 <ul className="ml-2">
                   <li>
@@ -39,7 +42,12 @@ function ExperienceWrapper() {
                     CodeIgniter.
                   </li>
                   <li>
-                    - Bekerja sama dengan tim untuk menyelesaikan project.
+                    - Bertanggung jawab terhadap pengelolaan laporan kehadiran
+                    pegawai bulanan.
+                  </li>
+                  <li>
+                    - Mengelola data dosen perguruan tinggi swasta di wilayah
+                    kalimantan.
                   </li>
                 </ul>
               </div>
@@ -57,7 +65,7 @@ function ExperienceWrapper() {
                 </div>
               </div>
               <div className="timeline-end mb-0 ml-3">
-                <time>Feb 2024 - Jun 2024</time>
+                <time>Februari 2024 - Juni 2024</time>
                 <div className="text-lg font-black">
                   Web & Mobile Developer at MSIB 6 MariBelajar
                 </div>

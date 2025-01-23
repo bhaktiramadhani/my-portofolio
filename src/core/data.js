@@ -20,6 +20,7 @@ import azure_fundamental from "../assets/images/certificate/Sertifikat_Kompetens
 import data_visualization from "../assets/images/certificate/DICODING_Belajar_Dasar_Visualisasi_Data.jpg";
 import project_management from "../assets/images/certificate/DICODING_Belajar_Dasar_Manajemen_Proyek.jpg";
 import msib_6 from "../assets/images/certificate/Sertifikat_Kepesertaan_MSIB_6.jpg";
+import pkl from "../assets/images/certificate/Sertifikat_PKL_Bhakti Ramadhani.jpg";
 import umkmsehati from "../assets/images/umkmsehati.png";
 import bakunjangan from "../assets/images/bakunjangan.png";
 
@@ -245,6 +246,12 @@ const skills = [
     url: "https://filament.dev/",
     icon_url: filament,
   },
+  {
+    name: "CodeIgniter",
+    url: "https://www.codeigniter.com/",
+    icon_url:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/codeigniter/codeigniter-plain.svg",
+  },
 ];
 
 const certificates = [
@@ -322,6 +329,12 @@ const certificates = [
     id: 15,
     title: "Kepesertaan MSIB 6",
     image: msib_6,
+  },
+  {
+    id: 16,
+    title:
+      "Sertifikat PKL Lembaga Layanan Pendidikan Tinggi(LLDIKTI) Wilayah XI",
+    image: pkl,
   },
 ];
 
