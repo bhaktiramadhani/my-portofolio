@@ -66,9 +66,8 @@ function ExperienceWrapper() {
               </div>
               <div className="timeline-end mb-0 ml-3">
                 <time>Februari 2024 - Juni 2024</time>
-                <div className="text-lg font-black">
-                  Web & Mobile Developer at MSIB 6 MariBelajar
-                </div>
+                <div className="text-lg font-black">MSIB 6 MariBelajar</div>
+                <div className="text-lg font-black">Web & Mobile Developer</div>
                 <ul className="ml-2 mt-2">
                   <li>
                     - Bekerja sama dengan tim untuk menyelesaikan pengerjaan
