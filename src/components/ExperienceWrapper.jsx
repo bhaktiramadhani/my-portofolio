@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import MariBelajar from "../assets/images/maribelajar.png";
 import logoLLDIKTI from "../assets/images/logo-LLDIKTI.png";
 import logoMaribelajar from "../assets/images/logo-maribelajar.png";
+import logoBarito from "../assets/images/logo-barito.png";
 
 function ExperienceWrapper() {
   return (
@@ -18,6 +19,38 @@ function ExperienceWrapper() {
         </div>
         <div className="mt-10">
           <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical dark:text-white">
+            <li>
+              <div className="timeline-middle">
+                <div className="border-2 border-slate-500 dark:border-white rounded-full">
+                  <img
+                    src={logoBarito}
+                    alt="Logo Barito"
+                    className="w-10 h-10 rounded-full"
+                  />
+                </div>
+              </div>
+              <div className="timeline-end mb-10 ml-3">
+                <time>Maret 2025 - Sekarang</time>
+                <div className="text-lg font-black">
+                  PT BARITO BERLIAN MOTOR - MITSUBISHI
+                </div>
+                <div className="text-lg font-black">
+                  IT PROGRAMMER
+                </div>
+                <ul className="ml-2">
+                  <li>
+                    - Merancang project accounting menggunakan Laravel
+                  </li>
+                  <li>
+                    - Merancang aplikasi absensi menggunakan React Native
+                  </li>
+                  <li>
+                    - Merancang aplikasi monitoring mobil menggunakan Laravel dan Automatic License Plate Recognition Python
+                  </li>
+                </ul>
+              </div>
+              <hr />
+            </li>
             <li>
               <div className="timeline-middle">
                 <div className="border-2 border-slate-500 dark:border-white rounded-full">
