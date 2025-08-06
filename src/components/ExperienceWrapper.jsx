@@ -35,7 +35,7 @@ function ExperienceWrapper() {
                   PT BARITO BERLIAN MOTOR - MITSUBISHI
                 </div>
                 <div className="text-lg font-black">
-                  IT PROGRAMMER
+                  IT Programmer
                 </div>
                 <ul className="ml-2">
                   <li>
@@ -46,6 +46,9 @@ function ExperienceWrapper() {
                   </li>
                   <li>
                     - Merancang aplikasi monitoring mobil menggunakan Laravel dan Automatic License Plate Recognition Python
+                  </li>
+                  <li>
+                    - Problem solving jaringan dan komputer
                   </li>
                 </ul>
               </div>
