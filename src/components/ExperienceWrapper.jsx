@@ -1,8 +1,77 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import MariBelajar from "../assets/images/maribelajar.png";
 import logoLLDIKTI from "../assets/images/logo-LLDIKTI.png";
 import logoMaribelajar from "../assets/images/logo-maribelajar.png";
 import logoBarito from "../assets/images/logo-barito.png";
+
+function calculateExperience(start, end = new Date()) {
+  const startDate = new Date(start);
+  const endDate = end ? new Date(end) : new Date();
+
+  let years = endDate.getFullYear() - startDate.getFullYear();
+  let months = endDate.getMonth() - startDate.getMonth();
+
+  // Jika bulan negatif, pinjam dari tahun
+  if (months < 0) {
+    years--;
+    months += 12;
+  }
+
+  // Pastikan tidak negatif
+  if (years < 0) years = 0;
+  if (months < 0) months = 0;
+
+  if (years > 0 && months > 0) {
+    return `${years} tahun ${months} bulan`;
+  } else if (years > 0) {
+    return `${years} tahun`;
+  } else {
+    return `${months} bulan`;
+  }
+}
+
+const experiences = [
+  {
+    logo: logoBarito,
+    period: "Maret 2025 - Sekarang",
+    company: "PT BARITO BERLIAN MOTOR - MITSUBISHI",
+    role: "IT Programmer",
+    start: "2025-03-01",
+    end: null,
+    details: [
+      "Merancang project accounting menggunakan Laravel",
+      "Merancang aplikasi absensi menggunakan React Native",
+      "Merancang aplikasi monitoring mobil menggunakan Laravel dan Automatic License Plate Recognition Python",
+      "Problem solving jaringan dan komputer",
+    ],
+  },
+  {
+    logo: logoLLDIKTI,
+    period: "September 2024 - Desember 2024",
+    company: "Lembaga Layanan Pendidikan Tinggi (LLDIKTI) Wilayah XI",
+    role: "Magang IT dan Staff Administrasi",
+    start: "2024-09-09",
+    end: "2024-12-27",
+    details: [
+      "Mengembangkan fitur-fitur baru pada project menggunakan CodeIgniter.",
+      "Bertanggung jawab terhadap pengelolaan laporan kehadiran pegawai bulanan.",
+      "Mengelola data dosen perguruan tinggi swasta di wilayah kalimantan.",
+    ],
+  },
+  {
+    logo: logoMaribelajar,
+    period: "Februari 2024 - Juni 2024",
+    company: "MSIB 6 MariBelajar",
+    role: "Web & Mobile Developer",
+    start: "2024-02-01",
+    end: "2024-06-30",
+    details: [
+      "Bekerja sama dengan tim untuk menyelesaikan pengerjaan tugas dan proyek.",
+      "Merancang dan mengimplementasikan penggunaan Microsoft Power Platform.",
+      "Membangun dan merancang website menggunakan Asp.NET yang menerapkan konsep MVC.",
+    ],
+  },
+];
 
 function ExperienceWrapper() {
   return (
@@ -19,108 +88,32 @@ function ExperienceWrapper() {
         </div>
         <div className="mt-10">
           <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical dark:text-white">
-            <li>
-              <div className="timeline-middle">
-                <div className="border-2 border-slate-500 dark:border-white rounded-full">
-                  <img
-                    src={logoBarito}
-                    alt="Logo Barito"
-                    className="w-10 h-10 rounded-full"
-                  />
+            {experiences.map((exp, index) => (
+              <li key={index}>
+                {index !== 0 && <hr />}
+                <div className="timeline-middle">
+                  <div className="border-2 border-slate-500 dark:border-white rounded-full">
+                    <img
+                      src={exp.logo}
+                      alt={exp.company}
+                      className="w-10 h-10 rounded-full"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="timeline-end mb-10 ml-3">
-                <time>Maret 2025 - Sekarang</time>
-                <div className="text-lg font-black">
-                  PT BARITO BERLIAN MOTOR - MITSUBISHI
+                <div className="timeline-end mb-10 ml-3">
+                  <time>
+                    {exp.period} • {calculateExperience(exp.start, exp.end)}
+                  </time>
+                  <div className="text-lg font-black">{exp.company}</div>
+                  <div className="text-lg font-black">{exp.role}</div>
+                  <ul className="ml-2 mt-2">
+                    {exp.details.map((item, idx) => (
+                      <li key={idx}>- {item}</li>
+                    ))}
+                  </ul>
                 </div>
-                <div className="text-lg font-black">
-                  IT Programmer
-                </div>
-                <ul className="ml-2">
-                  <li>
-                    - Merancang project accounting menggunakan Laravel
-                  </li>
-                  <li>
-                    - Merancang aplikasi absensi menggunakan React Native
-                  </li>
-                  <li>
-                    - Merancang aplikasi monitoring mobil menggunakan Laravel dan Automatic License Plate Recognition Python
-                  </li>
-                  <li>
-                    - Problem solving jaringan dan komputer
-                  </li>
-                </ul>
-              </div>
-              <hr />
-            </li>
-            <li>
-              <div className="timeline-middle">
-                <div className="border-2 border-slate-500 dark:border-white rounded-full">
-                  <img
-                    src={logoLLDIKTI}
-                    alt="Logo LLDIKTI Wilayah XI"
-                    className="w-10 h-10 rounded-full"
-                  />
-                </div>
-              </div>
-              <div className="timeline-end mb-10 ml-3">
-                <time>September 2024 - Desember 2024</time>
-                <div className="text-lg font-black">
-                  Lembaga Layanan Pendidikan Tinggi (LLDIKTI) Wilayah XI
-                </div>
-                <div className="text-lg font-black">
-                  Magang IT dan Staff Administrasi
-                </div>
-                <ul className="ml-2">
-                  <li>
-                    - Mengembangkan fitur-fitur baru pada project menggunakan
-                    CodeIgniter.
-                  </li>
-                  <li>
-                    - Bertanggung jawab terhadap pengelolaan laporan kehadiran
-                    pegawai bulanan.
-                  </li>
-                  <li>
-                    - Mengelola data dosen perguruan tinggi swasta di wilayah
-                    kalimantan.
-                  </li>
-                </ul>
-              </div>
-              <hr />
-            </li>
-            <li>
-              <hr />
-              <div className="timeline-middle">
-                <div className="border-2 border-slate-500 dark:border-white rounded-full">
-                  <img
-                    src={logoMaribelajar}
-                    alt="Logo Mari Belajar"
-                    className="w-10 h-10 rounded-full"
-                  />
-                </div>
-              </div>
-              <div className="timeline-end mb-0 ml-3">
-                <time>Februari 2024 - Juni 2024</time>
-                <div className="text-lg font-black">MSIB 6 MariBelajar</div>
-                <div className="text-lg font-black">Web & Mobile Developer</div>
-                <ul className="ml-2 mt-2">
-                  <li>
-                    - Bekerja sama dengan tim untuk menyelesaikan pengerjaan
-                    tugas dan proyek.
-                  </li>
-                  <li>
-                    - Merancang dan mengimplementasikan penggunaan Microsoft
-                    Power Platform.
-                  </li>
-                  <li>
-                    - Membangun dan merancang website menggunakan Asp.NET yang
-                    menerapkan konsep MVC.
-                  </li>
-                </ul>
-              </div>
-              <hr />
-            </li>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
