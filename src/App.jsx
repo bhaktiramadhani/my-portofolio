@@ -203,7 +203,7 @@ function App() {
               <p className="text-start mb-4">
                 Saya adalah lulusan D3 Sistem Informasi dari Politeknik Negeri
                 Banjarmasin dengan minat besar di bidang Software Engineering,
-                khususnya pengembangan website baik Frontend maupun Backend.
+                khususnya pengembangan website baik Fron-tend maupun Back-end.
                 Rasa ingin tahu dan semangat belajar mendorong saya untuk terus
                 mengasah keterampilan dan cepat beradaptasi dengan perkembangan
                 teknologi.
