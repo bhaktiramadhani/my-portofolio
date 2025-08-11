@@ -3,7 +3,7 @@ import Skill from "./Skill";
 
 function SkillWrapper() {
   return (
-    <section id="skills" className="mt-16 scroll-mt-6">
+    <section id="skills" className="mt-16 scroll-mt-20">
       <div>
         <div className="space-y-2">
           <h2

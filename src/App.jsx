@@ -17,14 +17,36 @@ import CertificateWrapper from "./components/CertificateWrapper";
 function App() {
   const [open, setOpen] = useState(false);
 
+  const [theme, setTheme] = useState(() => {
+    const saved = localStorage.getItem("theme");
+    if (saved) return saved; // 'dark' | 'light'
+    // fallback: ikuti preferensi sistem
+    return window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light";
+  });
+
   useEffect(() => {
     AOS.init({
       once: true,
     });
   }, []);
+
+  // apply ke <html> dan simpan ke localStorage
+  useEffect(() => {
+    const root = document.documentElement;
+    if (theme === "dark") root.classList.add("dark");
+    else root.classList.remove("dark");
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  const toggleTheme = () =>
+    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
+
   return (
-    <div className="flex flex-col font-poppins">
-      <header className="w-full flex items-center justify-between px-10 lg:justify-between lg:px-16 max-w-7xl mx-auto my-4 py-3">
+    <div className="flex flex-col font-poppins bg-white dark:bg-background text-black dark:text-white min-h-screen">
+      <header className="sticky top-0 z-50 w-full flex items-center justify-between px-10 lg:justify-between lg:px-16 max-w-7xl mx-auto py-3 bg-white/80 dark:bg-background/80 backdrop-blur-md shadow-sm">
+        {/* Tombol menu mobile */}
         <button
           onClick={() => setOpen(!open)}
           className={`${open ? "fixed" : "static"} md:hidden z-20`}
@@ -43,7 +65,6 @@ function App() {
                 d="M4 6h16M4 12h16M4 18h16"
               />
             </svg>
-
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -60,6 +81,8 @@ function App() {
             </svg>
           </div>
         </button>
+
+        {/* Navigasi */}
         <nav className="relative">
           <ul
             className={`${
@@ -68,66 +91,69 @@ function App() {
                 : "hidden"
             } gap-8 font-medium text-2xl md:flex`}
           >
-            <li
-              className="my-3"
-              onClick={() => setTimeout(() => setOpen(false), 200)}
-            >
-              <a
-                href="#home"
-                className="relative transition-all duration-500 ease-in-out hover:text-[rgb(85,85,85)] after:content-[''] after:w-0 after:h-[2px] after:block after:bg-[#555555] after:absolute after:left-1/2 hover:after:w-full hover:after:left-0 after:transition-all dark:text-white"
-              >
-                Home
-              </a>
-            </li>
-            <li
-              className="my-3"
-              onClick={() => setTimeout(() => setOpen(false), 200)}
-            >
-              <a
-                href="#projects"
-                className="relative transition-all duration-500 ease-in-out hover:text-[#555555] after:content-[''] after:w-0 after:h-[2px] after:block after:bg-[#555555] after:absolute after:left-1/2 hover:after:w-full hover:after:left-0 after:transition-all dark:text-white"
-              >
-                Projects
-              </a>
-            </li>
-            <li
-              className="my-3"
-              onClick={() => setTimeout(() => setOpen(false), 200)}
-            >
-              <a
-                href="#experience"
-                className="relative transition-all duration-500 ease-in-out hover:text-[#555555] after:content-[''] after:w-0 after:h-[2px] after:block after:bg-[#555555] after:absolute after:left-1/2 hover:after:w-full hover:after:left-0 after:transition-all dark:text-white"
-              >
-                Experience
-              </a>
-            </li>
-            <li
-              className="my-3"
-              onClick={() => setTimeout(() => setOpen(false), 200)}
-            >
-              <a
-                href="#skills"
-                className="relative transition-all duration-500 ease-in-out hover:text-[#555555] after:content-[''] after:w-0 after:h-[2px] after:block after:bg-[#555555] after:absolute after:left-1/2 hover:after:w-full hover:after:left-0 after:transition-all dark:text-white"
-              >
-                Skills
-              </a>
-            </li>
-            <li
-              className="my-3"
-              onClick={() => setTimeout(() => setOpen(false), 200)}
-            >
-              <a
-                href="#Certificate"
-                className="relative transition-all duration-500 ease-in-out hover:text-[#555555] after:content-[''] after:w-0 after:h-[2px] after:block after:bg-[#555555] after:absolute after:left-1/2 hover:after:w-full hover:after:left-0 after:transition-all dark:text-white"
-              >
-                Certificate
-              </a>
-            </li>
+            {["Home", "Projects", "Experience", "Skills", "Certificate"].map(
+              (item) => (
+                <li
+                  key={item}
+                  className="my-3"
+                  onClick={() => setTimeout(() => setOpen(false), 200)}
+                >
+                  <a
+                    href={`#${item.toLowerCase()}`}
+                    className="relative transition-all duration-500 ease-in-out hover:text-[#555555] after:content-[''] after:w-0 after:h-[2px] after:block after:bg-[#555555] after:absolute after:left-1/2 hover:after:w-full hover:after:left-0 after:transition-all dark:text-white"
+                  >
+                    {item}
+                  </a>
+                </li>
+              )
+            )}
           </ul>
         </nav>
-        <a href="https://github.com/bhaktiramadhani" target="_blank">
-          <img src={github} alt="github Icon" width={42} height={42} />
-        </a>
+
+        {/* GitHub + Toggle Theme */}
+        <div className="flex items-center gap-3">
+          <a
+            href="https://github.com/bhaktiramadhani"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:opacity-80 transition"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg"
+              alt="GitHub Icon"
+              width={32}
+              height={32}
+              className="dark:invert"
+            />
+          </a>
+
+          <button
+            onClick={toggleTheme}
+            aria-label="Toggle theme"
+            className="p-2 rounded-full border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition"
+            title={theme === "dark" ? "Switch to light" : "Switch to dark"}
+          >
+            {theme === "dark" ? (
+              // Matahari
+              <img
+                src="https://raw.githubusercontent.com/feathericons/feather/master/icons/sun.svg"
+                alt="Sun Icon"
+                width={22}
+                height={22}
+                className="dark:invert"
+              />
+            ) : (
+              // Bulan
+              <img
+                src="https://raw.githubusercontent.com/feathericons/feather/master/icons/moon.svg"
+                alt="Moon Icon"
+                width={22}
+                height={22}
+                className="dark:invert"
+              />
+            )}
+          </button>
+        </div>
       </header>
       <main className="w-full py-20 flex flex-col mx-auto px-10 lg:px-16 max-w-7xl">
         <section
@@ -174,13 +200,30 @@ function App() {
               </span>
             </div>
             <div className="my-8">
-              <p>
-                Saya adalah seorang mahasiswa yang punya rasa penasaran pada
-                bidang Web Developer, sehari hari saya belajar untuk membuat
-                diri berkembang dan memperbanyak pengalaman yang mendorong saya
-                untuk cepat beradaptasi pada bidang ini.
+              <p className="text-start mb-4">
+                Saya adalah lulusan D3 Sistem Informasi dari Politeknik Negeri
+                Banjarmasin dengan minat besar di bidang Software Engineering,
+                khususnya pengembangan website baik Frontend maupun Backend.
+                Rasa ingin tahu dan semangat belajar mendorong saya untuk terus
+                mengasah keterampilan dan cepat beradaptasi dengan perkembangan
+                teknologi.
+              </p>
+
+              <p className="text-start mb-4">
+                Berpengalaman mengerjakan berbagai proyek menggunakan Laravel,
+                Laravel Filament, CodeIgniter, Flask Python, React Native, dan
+                React JS. Saat ini saya bekerja sebagai IT Programmer di PT
+                Barito Berlian Motor.
+              </p>
+
+              <p className="text-start">
+                Saya berusaha menjaga kualitas, ketepatan waktu, dan komunikasi
+                yang baik dalam setiap proyek. Bagi saya, setiap tantangan
+                adalah kesempatan untuk belajar dan menemukan solusi yang
+                efektif.
               </p>
             </div>
+
             <div className="flex gap-4">
               <a
                 href={cv}

@@ -8,7 +8,7 @@ import { Autoplay } from "swiper/modules";
 function ProjectWrapper() {
   let swiperInstance = null;
   return (
-    <section id="projects" className="mt-32 scroll-mt-6">
+    <section id="projects" className="mt-32 scroll-mt-20">
       <div className="w-full flex items-center justify-between">
         <div className="space-y-2">
           <h2

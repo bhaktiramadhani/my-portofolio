@@ -8,7 +8,7 @@ import { certificates } from "../core/data";
 function CertificateWrapper() {
   let swiperInstance = null;
   return (
-    <section id="Certificate" className="mt-10 scroll-mt-6">
+    <section id="certificate" className="mt-10 scroll-mt-6">
       <div className="w-full flex flex-col">
         <div className="space-y-2 flex items-center justify-between">
           <h2
