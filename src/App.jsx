@@ -203,7 +203,7 @@ function App() {
               <p className="text-start mb-4">
                 Saya adalah lulusan D3 Sistem Informasi dari Politeknik Negeri
                 Banjarmasin dengan minat besar di bidang Software Engineering,
-                khususnya pengembangan website baik Fron-tend maupun Back-end.
+                khususnya pengembangan website baik Front-end maupun Back-end.
                 Rasa ingin tahu dan semangat belajar mendorong saya untuk terus
                 mengasah keterampilan dan cepat beradaptasi dengan perkembangan
                 teknologi.
@@ -211,9 +211,9 @@ function App() {
 
               <p className="text-start mb-4">
                 Berpengalaman mengerjakan berbagai proyek menggunakan Laravel,
-                Laravel Filament, CodeIgniter, Flask Python, React Native, dan
-                React JS. Saat ini saya bekerja sebagai IT Programmer di PT
-                Barito Berlian Motor.
+                Filament, CodeIgniter, Flask Python, React Native, dan React JS.
+                Saat ini saya bekerja sebagai IT Programmer di PT Barito Berlian
+                Motor.
               </p>
 
               <p className="text-start">
