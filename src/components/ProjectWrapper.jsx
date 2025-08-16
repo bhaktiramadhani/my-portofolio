@@ -83,7 +83,7 @@ function ProjectWrapper() {
         }}
         allowSlideNext={true}
         allowSlidePrev={true}
-        loop={true}
+        loop={false}
         autoplay={{
           delay: 4000,
           disableOnInteraction: false,

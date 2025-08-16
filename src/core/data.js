@@ -51,41 +51,6 @@ const projects = [
   },
   {
     id: 2,
-    img: chemaraya,
-    title: "Chemaraya",
-    desc: "Website yang berguna untuk memudahkan pencinta roti bakar chemaraya dengan fitur utama yang menyediakan informasi produk serta menghubungkan pengguna ke pihak ketiga yaitu Gojek Dan Grab.",
-    techs: [
-      {
-        imgTech:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
-        tech: "PHP",
-      },
-      {
-        imgTech:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
-        tech: "Tailwind CSS",
-      },
-    ],
-    source: "https://github.com/bhaktiramadhani/pbl-semester-3",
-    demo: "https://chemaraya.live",
-  },
-  {
-    id: 3,
-    img: dewarupa,
-    title: "Capstone Dewarupa - MSIB 6 MariBelajar",
-    desc: "Project akhir MSIB 6 di PT MariBelajar Indonesia Cerdas, website yang memberikan pembelajaran dalam beberapa kategori yaitu Tutorial, Webinar, dan Blog",
-    techs: [
-      {
-        imgTech:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg",
-        tech: ".NET",
-      },
-    ],
-    source: "https://github.com/bhaktiramadhani/Capstone-Dewarupa",
-    demo: "#",
-  },
-  {
-    id: 4,
     img: itechpoliban,
     title: "Komunitas iTech Poliban",
     desc: "Website yang dibuat untuk memperkenalkan komunitas iTech Poliban kepada seluruh mahasiswa",
@@ -113,7 +78,7 @@ const projects = [
     demo: "https://itechpoliban.com",
   },
   {
-    id: 5,
+    id: 3,
     img: umkmsehati,
     title: "UMKM Sehati",
     desc: "Platform yang mendukung pengrajin lokal untuk mendigitalisasikan produknya ke masyarakat luas diluar jangkauan.",
@@ -136,7 +101,7 @@ const projects = [
     demo: "https://umkmsehati.com",
   },
   {
-    id: 6,
+    id: 4,
     img: bakunjangan,
     title: "Bakunjangan",
     desc: "Website yang berisi informasi-informasi pariwisata untuk memudahkan masyarakat mengetahui pariwisata yang ada disekitar.",
@@ -159,6 +124,141 @@ const projects = [
     demo: "https://bakunjangan.com",
   },
 ];
+// const projects = [
+//   {
+//     id: 1,
+//     img: silantar,
+//     title: "Silantar",
+//     desc: "Silantar adalah platform yang dibangun untuk masyarakat bisa melaporkan masalah lingkungan sekitar ke pemerintahan yang bersangkutan.",
+//     techs: [
+//       {
+//         imgTech:
+//           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+//         tech: "Next.js",
+//       },
+//       {
+//         imgTech: laravel,
+//         tech: "Laravel",
+//       },
+//       {
+//         imgTech:
+//           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+//         tech: "Tailwind CSS",
+//       },
+//     ],
+//     source: "https://github.com/Sangoveka-Team/Silantar-KMIPN-V",
+//     demo: "https://silantar-kmipn-v.vercel.app/",
+//   },
+//   {
+//     id: 2,
+//     img: chemaraya,
+//     title: "Chemaraya",
+//     desc: "Website yang berguna untuk memudahkan pencinta roti bakar chemaraya dengan fitur utama yang menyediakan informasi produk serta menghubungkan pengguna ke pihak ketiga yaitu Gojek Dan Grab.",
+//     techs: [
+//       {
+//         imgTech:
+//           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
+//         tech: "PHP",
+//       },
+//       {
+//         imgTech:
+//           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+//         tech: "Tailwind CSS",
+//       },
+//     ],
+//     source: "https://github.com/bhaktiramadhani/pbl-semester-3",
+//     demo: "https://chemaraya.live",
+//   },
+//   {
+//     id: 3,
+//     img: dewarupa,
+//     title: "Capstone Dewarupa - MSIB 6 MariBelajar",
+//     desc: "Project akhir MSIB 6 di PT MariBelajar Indonesia Cerdas, website yang memberikan pembelajaran dalam beberapa kategori yaitu Tutorial, Webinar, dan Blog",
+//     techs: [
+//       {
+//         imgTech:
+//           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg",
+//         tech: ".NET",
+//       },
+//     ],
+//     source: "https://github.com/bhaktiramadhani/Capstone-Dewarupa",
+//     demo: "#",
+//   },
+//   {
+//     id: 4,
+//     img: itechpoliban,
+//     title: "Komunitas iTech Poliban",
+//     desc: "Website yang dibuat untuk memperkenalkan komunitas iTech Poliban kepada seluruh mahasiswa",
+//     techs: [
+//       {
+//         imgTech:
+//           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+//         tech: "Tailwind CSS",
+//       },
+//       {
+//         imgTech: laravel,
+//         tech: "Laravel",
+//       },
+//       {
+//         imgTech:
+//           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+//         tech: "React.js",
+//       },
+//       {
+//         imgTech: filament,
+//         tech: "Filament",
+//       },
+//     ],
+//     source: "#",
+//     demo: "https://itechpoliban.com",
+//   },
+//   {
+//     id: 5,
+//     img: umkmsehati,
+//     title: "UMKM Sehati",
+//     desc: "Platform yang mendukung pengrajin lokal untuk mendigitalisasikan produknya ke masyarakat luas diluar jangkauan.",
+//     techs: [
+//       {
+//         imgTech: laravel,
+//         tech: "Laravel",
+//       },
+//       {
+//         imgTech:
+//           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+//         tech: "Tailwind CSS",
+//       },
+//       {
+//         imgTech: filament,
+//         tech: "Filament",
+//       },
+//     ],
+//     source: "#",
+//     demo: "https://umkmsehati.com",
+//   },
+//   {
+//     id: 6,
+//     img: bakunjangan,
+//     title: "Bakunjangan",
+//     desc: "Website yang berisi informasi-informasi pariwisata untuk memudahkan masyarakat mengetahui pariwisata yang ada disekitar.",
+//     techs: [
+//       {
+//         imgTech: laravel,
+//         tech: "Laravel",
+//       },
+//       {
+//         imgTech:
+//           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+//         tech: "Tailwind CSS",
+//       },
+//       {
+//         imgTech: filament,
+//         tech: "Filament",
+//       },
+//     ],
+//     source: "#",
+//     demo: "https://bakunjangan.com",
+//   },
+// ];
 
 const skills = [
   {
