@@ -3,7 +3,7 @@ import github from "./assets/images/github.svg";
 import email from "./assets/images/email.svg";
 import instagram from "./assets/images/instagram.svg";
 import marker from "./assets/images/marker.svg";
-import profile from "./assets/images/profile.jpg";
+import profile from "./assets/images/pasfotobaru-edit-compress.jpg";
 import { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
 import AOS from "aos";
