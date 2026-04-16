@@ -212,8 +212,6 @@ function App() {
               <p className="text-start mb-4">
                 Berpengalaman mengerjakan berbagai proyek menggunakan Laravel,
                 Filament, CodeIgniter, Flask Python, React Native, dan React JS.
-                Saat ini saya bekerja sebagai IT Programmer di PT Barito Berlian
-                Motor.
               </p>
 
               <p className="text-start">

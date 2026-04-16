@@ -3,6 +3,7 @@ import MariBelajar from "../assets/images/maribelajar.png";
 import logoLLDIKTI from "../assets/images/logo-LLDIKTI.png";
 import logoMaribelajar from "../assets/images/logo-maribelajar.png";
 import logoBarito from "../assets/images/logo-barito.png";
+import logoPPA from '../assets/images/ppa.jpeg';
 
 function calculateExperience(start, end = new Date()) {
   const startDate = new Date(start);
@@ -32,17 +33,30 @@ function calculateExperience(start, end = new Date()) {
 
 const experiences = [
   {
+    logo: logoPPA,
+    period: "Januari 2026 - Sekarang",
+    company: "PT PUTRA PERKASA ABADI - SITE BIB",
+    role: "Data Processor & Web Developer SHE",
+    start: "2026-01-16",
+    end: null,
+    details: [
+  "Mengelola dan merapikan data operasional",
+  "Mengembangkan sistem berbasis web untuk mendukung digitalisasi proses",
+  "Mendukung kebutuhan operasional melalui pengelolaan data dan sistem",
+],
+  },
+  {
     logo: logoBarito,
-    period: "Maret 2025 - Sekarang",
+    period: "Maret 2025 - Januari 2026",
     company: "PT BARITO BERLIAN MOTOR - MITSUBISHI",
     role: "IT Programmer",
     start: "2025-03-01",
-    end: null,
+    end: "2026-01-10",
     details: [
-      "Merancang project accounting menggunakan Laravel",
-      "Merancang aplikasi absensi menggunakan React Native",
-      "Merancang aplikasi monitoring mobil menggunakan Laravel dan Automatic License Plate Recognition Python",
-      "Problem solving jaringan dan komputer",
+      "Membangun aplikasi Absensi Karyawan (React Native) dengan validasi lokasi real-time dan deteksi fake GPS, yang saat ini digunakan oleh lebih dari 10 karyawan",
+      "Mengembangkan sistem Monitoring Mobil menggunakan Laravel serta integrasi Automatic License Plate Recognition (ALPR) berbasis Python, sistem ini sudah digunakan oleh security di 3 cabang tempat",
+      "Mengembangkan sistem Rekrutmen Test menggunakan Laravel Livewire, dengan alur digitalisasi form kandidat, pengerjaan soal test dengan waktu realtime, dan hasil akhir nilai test yang akan digunakan untuk tahap wawancara",
+      "Melakukan troubleshooting perangkat komputer, instalasi software/hardware, pemeliharaan sistem, serta instalasi dan konfigurasi CCTV",
     ],
   },
   {
@@ -91,11 +105,11 @@ function ExperienceWrapper() {
             {experiences.map((exp, index) => (
               <li key={index}>
                 <div className="timeline-middle">
-                  <div className="border-2 border-slate-500 dark:border-white rounded-full">
+                  <div className="border-2 dark:border-white rounded-full">
                     <img
                       src={exp.logo}
                       alt={exp.company}
-                      className="w-10 h-10 rounded-full"
+                      className="w-12 h-12 rounded-full"
                     />
                   </div>
                 </div>
