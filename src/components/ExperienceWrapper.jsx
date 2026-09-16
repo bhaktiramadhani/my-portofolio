@@ -4,6 +4,7 @@ import logoLLDIKTI from "../assets/images/logo-LLDIKTI.png";
 import logoMaribelajar from "../assets/images/logo-maribelajar.png";
 import logoBarito from "../assets/images/logo-barito.png";
 import logoPPA from '../assets/images/ppa.jpeg';
+import logoItechPoliban from "../assets/images/itechpoliban.png";
 
 function calculateExperience(start, end = new Date()) {
   const startDate = new Date(start);
@@ -35,15 +36,15 @@ const experiences = [
   {
     logo: logoPPA,
     period: "Januari 2026 - Sekarang",
-    company: "PT PUTRA PERKASA ABADI - SITE BIB",
-    role: "Data Processor & Web Developer SHE",
+    company: "PT Putra Perkasa Abadi - Site Borneo Indobara, Tanah Bumbu",
+    role: "Data Processor & Web Developer",
     start: "2026-01-16",
     end: null,
     details: [
-  "Mengelola dan merapikan data operasional",
-  "Mengembangkan sistem berbasis web untuk mendukung digitalisasi proses",
-  "Mendukung kebutuhan operasional melalui pengelolaan data dan sistem",
-],
+      "SHERA (Safety, Health & Environment Reliable Assistance): membangun platform digital terintegrasi untuk ekosistem operasional Departemen SHE (Administrasi, Monitoring, dan Analitik Data), merancang 7+ modul operasional (DeepSearch Prosedur, Critical Card Control, Visitor, Komisioning Unit, Stop Work Authority, Izin Kerja Khusus, WASKAT, Media, dll), serta membangun dashboard monitoring real-time dan modul knowledge management SHEDUKASI K3L.",
+      "SHEDU (SHE Education): membangun platform training terintegrasi dari perencanaan hingga evaluasi, merancang modul Master Planning Training yang menghubungkan Competency Matrix, Training Need Analysis (TNA), dan Annual Master Plan (ATMP), serta mengembangkan workflow pelaksanaan training end-to-end dari pendaftaran peserta hingga evaluasi.",
+      "Data Processing & System Support: melakukan troubleshooting dan pemeliharaan sistem secara berkala, menyempurnakan sistem berdasarkan feedback pengguna, serta menangani pengumpulan, pembersihan, dan validasi data operasional untuk kebutuhan reporting.",
+    ],
   },
   {
     logo: logoBarito,
@@ -75,14 +76,27 @@ const experiences = [
   {
     logo: logoMaribelajar,
     period: "Februari 2024 - Juni 2024",
-    company: "MSIB 6 MariBelajar",
-    role: "Web & Mobile Developer",
+    company: "Magang MSIB MariBelajar",
+    role: "Web dan Mobile Developer",
     start: "2024-02-01",
     end: "2024-06-30",
     details: [
       "Bekerja sama dengan tim untuk menyelesaikan pengerjaan tugas dan proyek.",
       "Merancang dan mengimplementasikan penggunaan Microsoft Power Platform.",
       "Membangun dan merancang website menggunakan Asp.NET yang menerapkan konsep MVC.",
+    ],
+  },
+  {
+    logo: logoItechPoliban,
+    period: "Oktober 2023 - Februari 2025",
+    company: "iTech Poliban",
+    role: "Ketua Divisi Hackathon",
+    start: "2023-10-01",
+    end: "2025-02-28",
+    details: [
+      "Memimpin dan mengkoordinasikan divisi Hackathon dalam mempersiapkan anggota menghadapi kompetisi IT tingkat nasional seperti KMIPN dan GEMASTIK.",
+      "Menginisiasi dan menyelenggarakan program pembelajaran rutin untuk meningkatkan kompetensi teknis dan problem solving anggota.",
+      "Berperan aktif dalam pengembangan hardskill dan softskill anggota guna menciptakan tim yang kompetitif dan siap bersaing di tingkat nasional.",
     ],
   },
 ];

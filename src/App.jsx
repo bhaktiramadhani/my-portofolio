@@ -179,7 +179,11 @@ function App() {
             <h2 className="font-bold text-xl md:text-2xl text-[#555555] dark:text-white mt-2">
               <Typewriter
                 options={{
-                  strings: ["Front-end Developer", "Back-end Developer"],
+                  strings: [
+                    "Web Developer",
+                    "Front-end Developer",
+                    "Back-end Developer",
+                  ],
                   autoStart: true,
                   loop: true,
                   deleteSpeed: 120,
@@ -201,17 +205,20 @@ function App() {
             </div>
             <div className="my-8">
               <p className="text-start mb-4">
-                Saya adalah lulusan D3 Sistem Informasi dari Politeknik Negeri
-                Banjarmasin dengan minat besar di bidang Software Engineering,
-                khususnya pengembangan website baik Front-end maupun Back-end.
-                Rasa ingin tahu dan semangat belajar mendorong saya untuk terus
-                mengasah keterampilan dan cepat beradaptasi dengan perkembangan
-                teknologi.
+                Saya adalah lulusan D3 Manajemen Informatika dari Politeknik
+                Negeri Banjarmasin dengan pengalaman profesional lebih dari
+                satu tahun dalam pengembangan sistem berbasis pemecahan
+                masalah dan kebutuhan pengguna. Terbiasa memahami proses
+                bisnis, mengidentifikasi kebutuhan, dan menerjemahkannya ke
+                dalam alur sistem, pengelolaan data, serta solusi digital yang
+                mendukung operasional organisasi.
               </p>
 
               <p className="text-start mb-4">
-                Berpengalaman mengerjakan berbagai proyek menggunakan Laravel,
-                Filament, CodeIgniter, Flask Python, React Native, dan React JS.
+                Berpengalaman membangun sistem secara end-to-end menggunakan
+                Laravel, Filament, CodeIgniter, Fastify JS, React Native,
+                React JS, dan Next JS, mulai dari analisis kebutuhan hingga
+                implementasi solusi yang terintegrasi.
               </p>
 
               <p className="text-start">
