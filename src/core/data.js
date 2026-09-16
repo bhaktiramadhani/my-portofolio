@@ -352,6 +352,42 @@ const skills = [
     icon_url:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/codeigniter/codeigniter-plain.svg",
   },
+  {
+    name: "Fastify",
+    url: "https://fastify.dev/",
+    icon_url:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastify/fastify-original.svg",
+  },
+  {
+    name: "DaisyUI",
+    url: "https://daisyui.com/",
+    icon_url:
+      "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/daisyui.svg",
+  },
+  {
+    name: "Swiper.js",
+    url: "https://swiperjs.com/",
+    icon_url:
+      "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/swiper.svg",
+  },
+  {
+    name: "Chart.js",
+    url: "https://www.chartjs.org/",
+    icon_url:
+      "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/chartdotjs.svg",
+  },
+  {
+    name: "ECharts",
+    url: "https://echarts.apache.org/",
+    icon_url:
+      "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/apacheecharts.svg",
+  },
+  {
+    name: "Microsoft Office",
+    url: "https://www.microsoft.com/microsoft-365",
+    icon_url:
+      "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/microsoftoffice.svg",
+  },
 ];
 
 const certificates = [
